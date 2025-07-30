@@ -303,6 +303,7 @@ a {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  border: 1px solid var(--color-silver); 
 }
 
 .player__circle {
@@ -852,7 +853,6 @@ a {
 .footer-address,
 .footer-socials-list {
   margin-top: 15px;
-
 }
 
 .footer-address {
