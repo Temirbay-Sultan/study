@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resonator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <a href="/" class="header__logo">
+            <img src="./images/logo.png" alt="Logo image Resonator" class="header__logo-image" width="130" height="20"
+                loading="lazy" />
+        </a>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item menu__item--current">
+                    <a href="/" class="menu__link">Homes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="/" class="menu__link">Pages</a>
+                </li>
+                <li class="menu__item">
+                    <a href="/" class="menu__link">Podcast</a>
+                </li>
+                <li class="menu__item">
+                    <a href="/" class="menu__link">Blog</a>
+                </li>
+                <li class="menu__item">
+                    <a href="/" class="menu__link">Shop</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__actions">
+            <div class="search">
+                <svg class="search__icon" width="21" height="19" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M21 21L15.8 15.8M18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <a href="/" class="search__text">Search</a>
+            </div>
+
+            <div class="icon icon--grid">
+                <svg class="icon__svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 26">
+                    <rect width="5" height="5" y=".469" rx="2.5" />
+                    <rect width="5" height="5" x="10" y=".469" rx="2.5" />
+                    <rect width="5" height="5" x="20" y=".469" rx="2.5" />
+                    <rect width="5" height="5" y="10.469" rx="2.5" />
+                    <rect width="5" height="5" x="10" y="10.469" rx="2.5" />
+                    <rect width="5" height="5" x="20" y="10.469" rx="2.5" />
+                    <rect width="5" height="5" y="20.469" rx="2.5" />
+                    <rect width="5" height="5" x="10" y="20.469" rx="2.5" />
+                    <rect width="5" height="5" x="20" y="20.469" rx="2.5" />
+                </svg>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <section class="img-with-image">
+            <img class="img__relative" src="./images/image.jpg" alt="Фоновое изображение" />
+            <div class="banner__body">
+                <h3 class="banner__title">New episode<br />available now</h3>
+                <div class="banner__info">Available on Apple Soundcast and Spotify.</div>
+                <div class="banner__buttons">
+                    <button class="button button--fancy">
+                        <div class="button__icon">
+                            <img src="./images/Apple-Podcast-2.png" alt="apple podcast imgage" class="podcast-img">
+                        </div>
+                        <div class="button__text">
+                            <span class="button__text-top">Listen on</span>
+                            <span class="button__text-bottom">Apple Podcasts</span>
+                        </div>
+                    </button>
+                    <button class="button button--fancy">
+                        <div class="button__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+                                <path fill="white"
+                                    d="M25.173 355.106c1.076 0 1.946-.849 2.117-2.067l5.717-44.884-5.717-45.889c-.171-1.22-1.041-2.061-2.117-2.061-1.091 0-1.982.862-2.125 2.061l-5.026 45.889 5.026 44.876c.143 1.198 1.035 2.075 2.125 2.075zM8.328 336.058v.007-.007zm-2.054 1.989c1.041 0 1.875-.813 2.053-1.982l4.42-27.909-4.42-28.395c-.171-1.169-1.012-1.981-2.053-1.981-1.062 0-1.896.819-2.046 1.996L.5 308.155l3.729 27.896c.149 1.176.983 1.996 2.045 1.996zm41.534-84.335c-.157-1.454-1.233-2.51-2.56-2.51-1.354 0-2.424 1.063-2.566 2.51l-4.762 54.45 4.762 52.455c.143 1.461 1.212 2.509 2.566 2.509 1.326 0 2.402-1.048 2.552-2.495l5.425-52.469-5.417-54.45zm17.679 111.524c1.568 0 2.852-1.269 3.001-2.944l5.119-54.123-5.119-55.947c-.149-1.675-1.433-2.944-3.001-2.944-1.583 0-2.873 1.27-3.001 2.951l-4.513 55.94 4.513 54.123c.128 1.676 1.418 2.944 3.001 2.944zm20.403.891c1.825 0 3.301-1.461 3.436-3.386l-.007.007 4.827-54.571-4.827-51.913c-.128-1.918-1.604-3.372-3.429-3.372-1.839 0-3.315 1.454-3.429 3.387l-4.256 51.898 4.256 54.564c.114 1.925 1.59 3.386 3.429 3.386zm28.958-57.929-4.527-84.436c-.114-2.152-1.811-3.828-3.864-3.828s-3.764 1.676-3.864 3.828l-4 84.436 4 54.564c.1 2.124 1.811 3.813 3.864 3.813s3.75-1.689 3.864-3.828v.015l4.527-54.564zm12.347 58.479c2.303 0 4.185-1.868 4.299-4.264v.036l4.228-54.244-4.228-103.74c-.114-2.395-1.996-4.27-4.299-4.27-2.317 0-4.213 1.875-4.313 4.27l-3.735 103.74 3.743 54.229c.092 2.375 1.988 4.243 4.305 4.243zm20.895-175.565c-2.574 0-4.655 2.067-4.748 4.705l-3.472 112.402 3.479 53.666c.085 2.616 2.167 4.677 4.741 4.677 2.552 0 4.641-2.061 4.741-4.698v.036l3.928-53.681-3.928-112.409c-.101-2.637-2.189-4.698-4.741-4.698zm21.066 175.557c2.809 0 5.083-2.26 5.175-5.14v.035l3.622-53.338-3.622-116.188c-.093-2.887-2.366-5.146-5.175-5.146-2.823 0-5.097 2.26-5.183 5.146l-3.223 116.188 3.223 53.331c.086 2.852 2.36 5.112 5.183 5.112zm21.222-.05c3.065 0 5.532-2.452 5.611-5.589v.043l3.336-52.84-3.336-113.229c-.079-3.129-2.546-5.582-5.611-5.582-3.072 0-5.546 2.46-5.617 5.582l-2.958 113.229 2.965 52.825c.064 3.109 2.538 5.561 5.61 5.561zm30.47-58.371-3.03-109.108c-.071-3.372-2.73-6.017-6.045-6.017-3.329 0-5.988 2.645-6.053 6.024l-2.702 109.093 2.702 52.49c.064 3.344 2.724 5.988 6.053 5.988 3.314 0 5.974-2.645 6.045-6.023v.043l3.03-52.49zm12.482 58.578c3.515 0 6.423-2.901 6.48-6.466v.043l2.737-52.148-2.737-129.824c-.058-3.558-2.966-6.459-6.48-6.459-3.521 0-6.431 2.901-6.487 6.459l-2.445 129.781c0 .079 2.445 52.184 2.445 52.184.056 3.529 2.966 6.43 6.487 6.43zm21.458-207.059c-3.771 0-6.872 3.108-6.93 6.908l-2.83 141.595 2.83 51.385c.058 3.75 3.158 6.851 6.93 6.851 3.764 0 6.865-3.101 6.922-6.9v.057l3.08-51.392-3.08-141.602c-.057-3.794-3.158-6.902-6.922-6.902zm19.64 207.094c.157.015 173.098.101 174.224.101 34.718 0 62.849-28.146 62.849-62.863s-28.131-62.849-62.849-62.849a62.733 62.733 0 0 0-24.31 4.877c-4.997-56.646-52.512-101.089-110.448-101.089-14.179 0-28.002 2.795-40.207 7.521-4.74 1.832-6.01 3.729-6.052 7.386v199.488c.05 3.85 3.036 7.058 6.793 7.428z" />
+                            </svg>
+                        </div>
+                        <div class="button__text">
+                            <span class="button__text-top">Listen on</span>
+                            <span class="button__text-bottom">Soundcloud</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="player">
+            <div class="player-image">
+            </div>
+            <div class="player-content">
+                <div class="player-content-text">
+                    <h3 class="player-title">
+                        Timmy Mike: the nature<br>
+                        of design
+                    </h3>
+                    <p class="player-next-page">Episode page</p>
+                    <button class="player-button button-next"></button>
+                </div>
+                <div class="player-subtitle">
+                    Episode 1 • Microphone • 0:13
+                </div>
+                <div class="player-microphone">
+                    <div class="player__circle circle">
+                    </div>
+                    <div class="player-time-slider-text text-slide">
+                        10s 10s
+                    </div>
+                    <div class="player-slider"></div>
+                    <div class="player-time text-slide">
+                        00:00 / 00:00
+                    </div>
+                    <div class="player-sound">
+                        <img src="./images/volume.png" alt="Volume Icon" width="20" height="20" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="player-box">
+            <div class="left-box">
+                <div class="player-box-title">
+                    Best places to<br> find design <br>inspiration
+                </div>
+                <div class="player-box-info">
+                    <div class="player__box__circle circle">
+                    </div>
+                    <div class="player-box-all-info">
+                        <div class="player-box-ep episode">
+                            Episode 1
+                        </div>
+                        <div class="player-box-caregory text-slide ">
+                            Category • 0:13
+                        </div>
+                    </div>
+                </div>
+                <div class="all-paragraph">
+                    <div class="palyer-box-paragraph paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip. </div>
+                    <div class="palyer-box-paragraph-2 paragraph">
+                        Ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui
+                        officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+
+                <div class="player-box-episode episode  ">
+                    <p class="player-box-next">
+                        Episode page
+                    </p>
+                    <button class="player-box-button button-next"></button>
+                </div>
+                <div class="player-box-image"></div>
+            </div>
+            <div class="albom__right">
+                <div class="albom__right-preview">
+                    <div class="player__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="top-podcasts">
+            <div class="top-podcasts-content">
+                <div class="top-podcasts-title center style-text">
+                    Top
+                </div>
+                <div class="top-podcasts-title-2 center style-text">
+                    podcasts:
+                </div>
+                <div class="top-podcasts-title-description center">
+                    Discover the selection of the most popular podcasts.
+                </div>
+                <div class="cards-scroll-body">
+                    <div class="card">
+                        <div class="card-img-style">
+                            <img src="./images/podcasts/1.png" alt="body" class="card-img" loading="lazy" width="250"
+                                height="250">
+                            <div class="square">
+                                <img src="./svg/headphones.svg" class="img-heads" alt="frame">
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-episode text-slide">
+                                Episode 7 • Technology
+                            </div>
+                            <div class="card-title-wrapper">
+                                <div class="card-title">SRKP selects: open your mind easy</div>
+                                <div class="black-line"></div>
+                            </div>
+                            <div class="card-next-next">
+                                <p class="card-next">
+                                    Episode page
+                                </p>
+                                <button class="player-box-button button-next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-style">
+                            <img src="./images/podcasts/2.png" alt="body" class="card-img" loading="lazy" width="250"
+                                height="250">
+                            <div class="square">
+                                <img src="./svg/headphones.svg" class="img-heads" alt="frame">
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-episode text-slide">
+                                Episode 8 • Technology
+                            </div>
+                            <div class="card-title-wrapper">
+                                <div class="card-title">SRKP selects: keep your watch</div>
+                                <div class="black-line"></div>
+                            </div>
+                            <div class="card-next-next">
+                                <p class="card-next">
+                                    Episode page
+                                </p>
+                                <button class="player-box-button button-next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-style">
+                            <img src="./images/podcasts/3.png" alt="body" class="card-img" loading="lazy" width="250"
+                                height="250">
+                            <div class="square">
+                                <img src="./svg/headphones.svg" class="img-heads" alt="frame">
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-episode text-slide">
+                                Episode 9 • Technology
+                            </div>
+                            <div class="card-title">SRKP selects: to hide <br> behind safe</div>
+                            <div class="black-line dop"></div>
+                            <div class="card-next-next">
+                                <p class="card-next">
+                                    Episode page
+                                </p>
+                                <button class="player-box-button button-next"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-point-all">
+                    <div class="card-point-wrapper">
+                        <div class="card-point">
+                        </div>
+                        <div class="ring"></div>
+                    </div>
+                    <div class="card-point"></div>
+                    <div class="card-point"></div>
+                    <div class="card-point"></div>
+                </div>
+            </div>
+        </section>
+        <section class="essential">
+            <div class="essential-text">
+                <div class="view-all-episodes">Essential episodes:</div>
+                <div class="essential-sub-all">
+                    View all episodes
+                    <button class="essential-button button-next"></button>
+
+                </div>
+
+            </div>
+            <div class="essential-all-cart">
+                <div class="essential-cart">
+                    <div class="card-img-style-es">
+                        <img src="./images/podcasts/1.png" alt="" class="essential-img" loading="lazy">
+                        <div class="essential-square">
+                            <img src="./svg/headphones.svg" class="essential-img-heads" alt="frame">
+                        </div>
+                    </div>
+                    <div class="card-text-es">
+                        <div class="card-episode-es text-slide">
+                            Episode 1 • Technology
+                        </div>
+                        <div class="card-title-wrapper-es">
+                            <div class="card-title-es">SRKP selects: how the new ages work</div>
+                            <div class="black-line es1"></div>
+                        </div>
+                        <div class="card-next-next-es">
+                            <p class="card-next-es text-slide">
+                                Share
+                            </p>
+                            <button class="essential-box-button button-share"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="essential-cart">
+                    <div class="card-img-style-es">
+                        <img src="./images/essential/2.png" alt="" class="essential-img" loading="lazy">
+                        <div class="essential-square">
+                            <img src="./svg/headphones.svg" class="essential-img-heads" alt="frame">
+                        </div>
+                    </div>
+                    <div class="card-text-es">
+                        <div class="card-episode-es text-slide">
+                            Episode 2 • Technology
+                        </div>
+                        <div class="card-title-wrapper-es">
+                            <div class="card-title-es">SRKP selects: a new mindset today</div>
+                            <div class="black-line es2"></div>
+                        </div>
+                        <div class="card-next-next-es">
+                            <p class="card-next-es text-slide">
+                                Share
+                            </p>
+                            <button class="essential-box-button button-share"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="essential-cart">
+                    <div class="card-img-style-es">
+                        <img src="./images/essential/3.png" alt="" class="essential-img" loading="lazy">
+                        <div class="essential-square">
+                            <img src="./svg/headphones.svg" class="essential-img-heads" alt="frame">
+                        </div>
+                    </div>
+                    <div class="card-text-es">
+                        <div class="card-episode-es text-slide">
+                            Episode 3 • Technology
+                        </div>
+                        <div class="card-title-wrapper-es">
+                            <div class="card-title-es">SRKP selects: the latest trends now</div>
+                            <div class="black-line es3"></div>
+                        </div>
+                        <div class="card-next-next-es">
+                            <p class="card-next-es text-slide">
+                                Share
+                            </p>
+                            <button class="essential-box-button button-share"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="essential-cart">
+                    <div class="card-img-style-es">
+                        <img src="./images/essential/4.png" alt="" class="essential-img" loading="lazy">
+                        <div class="essential-square">
+                            <img src="./svg/headphones.svg" class="essential-img-heads" alt="frame">
+                        </div>
+                    </div>
+                    <div class="card-text-es">
+                        <div class="card-episode-es text-slide">
+                            Episode 4 • Technology
+                        </div>
+                        <div class="card-title-wrapper-es">
+                            <div class="card-title-es">SRKP selects: organize your day</div>
+                            <div class="black-line es4"></div>
+                        </div>
+                        <div class="card-next-next-es">
+                            <p class="card-next-es text-slide">
+                                Share
+                            </p>
+                            <button class="essential-box-button button-share"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="essential-cart">
+                    <div class="card-img-style-es">
+                        <img src="./images/essential/5.png" alt="" class="essential-img" loading="lazy">
+                        <div class="essential-square">
+                            <img src="./svg/headphones.svg" class="essential-img-heads" alt="frame">
+                        </div>
+                    </div>
+                    <div class="card-text-es">
+                        <div class="card-episode-es text-slide">
+                            Episode 5 • Technology
+                        </div>
+                        <div class="card-title-wrapper-es">
+                            <div class="card-title-es">SRKP selects: how to plan your work</div>
+                            <div class="black-line es5"></div>
+                        </div>
+                        <div class="card-next-next-es">
+                            <p class="card-next-es text-slide">
+                                Share
+                            </p>
+                            <button class="essential-box-button button-share"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="essential-cart">
+                    <div class="card-img-style-es">
+                        <img src="./images/essential/6.png" alt="" class="essential-img" loading="lazy">
+                        <div class="essential-square">
+                            <img src="./svg/headphones.svg" class="essential-img-heads" alt="frame">
+                        </div>
+                    </div>
+                    <div class="card-text-es">
+                        <div class="card-episode-es text-slide">
+                            Episode 6 • Technology
+                        </div>
+                        <div class="card-title-wrapper-es">
+                            <div class="card-title-es">SRKP selects: trying the best phones</div>
+                            <div class="black-line6"></div>
+                        </div>
+                        <div class="card-next-next-es">
+                            <p class="card-next-es text-slide">
+                                Share
+                            </p>
+                            <button class="essential-box-button button-share"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mountain">
+            <div class="mountain__img">
+                <img src="./images/mn2.png" alt="" loading="lazy">
+                <div class="mountain__circle">
+
+                </div>
+            </div>
+        </section>
+        <section class="meet">
+            <div class="meet__text">
+                <div class="view__all-meets">Meet your hosts:</div>
+                <div class="meet__sub-all">
+                    View all them
+                    <button class="meet__button button-next"></button>
+                </div>
+            </div>
+            <div class="all-meet-cart">
+                <div class="meet-cart">
+                    <div class="meet-img-style-es">
+                        <img src="./images/meet/1.png" alt="" class="essential-img" loading="lazy">
+                    </div>
+                    <div class="meet-card-text-es">
+                        <div class="meet-card-title-wrapper-es">
+                            <div class="meet-card-title-es">
+                                Bella Jimenez
+                            </div>
+                        </div>
+                        <div class="meet-card-episode-es text-slide">
+                            Creative Strategist
+                        </div>
+                        <div class="meet-card-next-next-es">
+                            <div class="resources">
+                                <img src="./images/meet/social-media.png" alt="" class="social-media">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meet-cart">
+                    <div class="meet-img-style-es">
+                        <img src="./images/meet/2.png" alt="" class="essential-img" loading="lazy">
+                    </div>
+                    <div class="meet-card-text-es">
+                        <div class="meet-card-title-wrapper-es">
+                            <div class="meet-card-title-es">
+                                Edwin Watson
+                            </div>
+                        </div>
+                        <div class="meet-card-episode-es text-slide">
+                            Creative Strategist
+                        </div>
+                        <div class="meet-card-next-next-es">
+                            <div class="resources">
+                                <img src="./images/meet/social-media.png" alt="" class="social-media">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meet-cart">
+                    <div class="meet-img-style-es">
+                        <img src="./images/meet/3.png" alt="" class="essential-img" loading="lazy">
+                    </div>
+                    <div class="meet-card-text-es">
+                        <div class="meet-card-title-wrapper-es">
+                            <div class="meet-card-title-es">
+                                Caitlin Henderson
+                            </div>
+                        </div>
+                        <div class="meet-card-episode-es text-slide">
+                            Creative Strategist
+                        </div>
+                        <div class="meet-card-next-next-es">
+                            <div class="resources">
+                                <img src="./images/meet/social-media.png" alt="" class="social-media">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer__inner">
+                <div class="footer__img">
+                    <a href="/" class="footer__logo logo">
+                        <img src="./images/quote/logo-white.png" alt="logo">
+                    </a>
+                    <div class="footer__sub">The great connection.</div>
+                </div>
+                <div class="footer__main">
+                    <div class="footer__quote">We collaborate with ambitious brands and people; <br> let’s build
+                        something
+                        great
+                        together.</div>
+                    <div class="footer__column-all text-slide">
+                        <div class="footer-column">
+                            <h2 class="footer-column-title">
+                                Start a conversation:
+                            </h2>
+                            <ul class="footer-contacts-list">
+                                <li class="footer-contacts-item">
+                                    <a class="footer-contacts-link text-silver-white"
+                                        href="mailto:podcast@example.com">podcast@example.com</a>
+                                </li>
+                                <li class="footer-contacts-item">
+                                    <a class="footer-contacts-link text-silver-white" href="tel:+29698667033">+2 969 866
+                                        7033</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h2 class="footer-column-title">
+                                Find us here:
+                            </h2>
+                            <address class="footer-address text-silver-white">
+                                Brooklyn, NY 11201 <br>
+                                United States
+                            </address>
+                        </div>
+                        <div class="footer-column add-margin">
+                            <h2 class="footer-column-title">
+                                Follow us on:
+                            </h2>
+                            <ul class="footer-socials-list">
+                                <li class="footer-soc1als-item">
+                                    <a class="footer-soc1als-link" href="/" target="_blank">
+                                        <svg width="18" height="18" viewBox="0 0 22 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M21.1719 10.2031C21.1719 15.2891 17.4395 19.5137 12.5586 20.252V13.1562H14.9375L15.3887 10.2031H12.5586V8.31641C12.5586 7.49609 12.9688 6.7168 14.2402 6.7168H15.5117V4.21484C15.5117 4.21484 14.3633 4.00977 13.2148 4.00977C10.918 4.00977 9.40039 5.44531 9.40039 7.98828V10.2031H6.81641V13.1562H9.40039V20.252C4.51953 19.5137 0.828125 15.2891 0.828125 10.2031C0.828125 4.58398 5.38086 0.03125 11 0.03125C16.6191 0.03125 21.1719 4.58398 21.1719 10.2031Z"
+                                                fill="#969696" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer-soc1als-item">
+                                    <a class="footer-soc1als-link" href="/" target="_blank">
+                                        <svg width="18" height="18" viewBox="0 0 22 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.3262 4.9375C19.3262 5.14258 19.3262 5.30664 19.3262 5.51172C19.3262 11.2129 15.0195 17.7344 7.10352 17.7344C4.64258 17.7344 2.38672 17.0371 0.5 15.8066C0.828125 15.8477 1.15625 15.8887 1.52539 15.8887C3.53516 15.8887 5.38086 15.1914 6.85742 14.043C4.9707 14.002 3.37109 12.7715 2.83789 11.0488C3.125 11.0898 3.37109 11.1309 3.6582 11.1309C4.02734 11.1309 4.4375 11.0488 4.76562 10.9668C2.79688 10.5566 1.32031 8.83398 1.32031 6.74219V6.70117C1.89453 7.0293 2.5918 7.19336 3.28906 7.23438C2.09961 6.45508 1.36133 5.14258 1.36133 3.66602C1.36133 2.8457 1.56641 2.10742 1.93555 1.49219C4.06836 4.07617 7.26758 5.79883 10.8359 6.00391C10.7539 5.67578 10.7129 5.34766 10.7129 5.01953C10.7129 2.64062 12.6406 0.712891 15.0195 0.712891C16.25 0.712891 17.3574 1.20508 18.1777 2.06641C19.1211 1.86133 20.0645 1.49219 20.8848 1C20.5566 2.02539 19.9004 2.8457 18.998 3.37891C19.8594 3.29688 20.7207 3.05078 21.459 2.72266C20.8848 3.58398 20.1465 4.32227 19.3262 4.9375Z"
+                                                fill="#969696" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                                <li class="footer-soc1als-item">
+                                    <a class="footer-soc1als-link" href="/" target="_blank">
+                                        <svg width="18" height="18" viewBox="0 0 19 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.6875 4.48633C12.2715 4.48633 14.4043 6.61914 14.4043 9.20312C14.4043 11.8281 12.2715 13.9199 9.6875 13.9199C7.0625 13.9199 4.9707 11.8281 4.9707 9.20312C4.9707 6.61914 7.0625 4.48633 9.6875 4.48633ZM9.6875 12.2793C11.3691 12.2793 12.7227 10.9258 12.7227 9.20312C12.7227 7.52148 11.3691 6.16797 9.6875 6.16797C7.96484 6.16797 6.61133 7.52148 6.61133 9.20312C6.61133 10.9258 8.00586 12.2793 9.6875 12.2793ZM15.6758 4.32227C15.6758 4.9375 15.1836 5.42969 14.5684 5.42969C13.9531 5.42969 13.4609 4.9375 13.4609 4.32227C13.4609 3.70703 13.9531 3.21484 14.5684 3.21484C15.1836 3.21484 15.6758 3.70703 15.6758 4.32227ZM18.793 5.42969C18.875 6.94727 18.875 11.5 18.793 13.0176C18.7109 14.4941 18.3828 15.7656 17.3164 16.873C16.25 17.9395 14.9375 18.2676 13.4609 18.3496C11.9434 18.4316 7.39062 18.4316 5.87305 18.3496C4.39648 18.2676 3.125 17.9395 2.01758 16.873C0.951172 15.7656 0.623047 14.4941 0.541016 13.0176C0.458984 11.5 0.458984 6.94727 0.541016 5.42969C0.623047 3.95312 0.951172 2.64062 2.01758 1.57422C3.125 0.507812 4.39648 0.179688 5.87305 0.0976562C7.39062 0.015625 11.9434 0.015625 13.4609 0.0976562C14.9375 0.179688 16.25 0.507812 17.3164 1.57422C18.3828 2.64062 18.7109 3.95312 18.793 5.42969ZM16.8242 14.6172C17.3164 13.4277 17.1934 10.5566 17.1934 9.20312C17.1934 7.89062 17.3164 5.01953 16.8242 3.78906C16.4961 3.00977 15.8809 2.35352 15.1016 2.06641C13.8711 1.57422 11 1.69727 9.6875 1.69727C8.33398 1.69727 5.46289 1.57422 4.27344 2.06641C3.45312 2.39453 2.83789 3.00977 2.50977 3.78906C2.01758 5.01953 2.14062 7.89062 2.14062 9.20312C2.14062 10.5566 2.01758 13.4277 2.50977 14.6172C2.83789 15.4375 3.45312 16.0527 4.27344 16.3809C5.46289 16.873 8.33398 16.75 9.6875 16.75C11 16.75 13.8711 16.873 15.1016 16.3809C15.8809 16.0527 16.5371 15.4375 16.8242 14.6172Z"
+                                                fill="#969696" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                                <li class="footer-soc1als-item">
+                                    <a class="footer-soc1als-link" href="/" target="_blank">
+                                        <svg width="20" height="20" viewBox="0 0 23 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.3926 2.83008C22.8848 4.55273 22.8848 8.24414 22.8848 8.24414C22.8848 8.24414 22.8848 11.8945 22.3926 13.6582C22.1465 14.6426 21.3672 15.3809 20.4238 15.627C18.6602 16.0781 11.6875 16.0781 11.6875 16.0781C11.6875 16.0781 4.67383 16.0781 2.91016 15.627C1.9668 15.3809 1.1875 14.6426 0.941406 13.6582C0.449219 11.8945 0.449219 8.24414 0.449219 8.24414C0.449219 8.24414 0.449219 4.55273 0.941406 2.83008C1.1875 1.8457 1.9668 1.06641 2.91016 0.820312C4.67383 0.328125 11.6875 0.328125 11.6875 0.328125C11.6875 0.328125 18.6602 0.328125 20.4238 0.820312C21.3672 1.06641 22.1465 1.8457 22.3926 2.83008ZM9.39062 11.5664L15.2148 8.24414L9.39062 4.92188V11.5664Z"
+                                                fill="#969696" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__footer">
+                        <div class="footer__content-item text-slide">
+                            Terms & Conditions
+                        </div>
+                        <div class="footer__content-item text-slide">
+                            Privacy Policy
+                        </div>
+                        <div class="footer__content-item text-slide">
+                            © 2021 Qode Interactive. All Rights Reserved
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
