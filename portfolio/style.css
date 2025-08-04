@@ -22,7 +22,13 @@
 
 .banner__inner {
   display: flex;
-  margin-top: 158px
+  padding: 150px 0 50px 0;
+}
+
+.banner__article {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .banner__article {
@@ -42,7 +48,6 @@
 }
 
 .banner__subtitle {
-  margin-top: 40px;
   font-family: var(--font-family-base);
   font-size: 16px;
   color: var(--color-dark-blue);
@@ -53,7 +58,6 @@
   height: 47px;
   width: 208px;
   font-weight: 700;
-  margin-top: 38px;
   font-family: var(--font-family-base);
   background: var(--color-primary);
   border: none;
@@ -62,8 +66,7 @@
   margin-bottom: 50px;
 }
 
-.banner__portfolio-img {
-  position: relative;
+.banner__avatar {
   border-radius: 50%;
   width: 40%;
   flex-shrink: 0;
@@ -71,22 +74,26 @@
   justify-content: center;
 }
 
-.img-wrapper::before {
+.banner__avatar-inner {
+  height: fit-content;
+  position: relative;
+}
+
+.banner__avatar-inner::before {
   content: "";
+  display: block;
   position: absolute;
   top: 13px;
-  transform: translateX(-5px);
-  width: 243px;
-  height: 243px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
   background-color: #EDF7FA;
   border-radius: 50%;
   z-index: -1;
 }
 
-
 .posts {
   background: var(--color-posts);
-  padding-left: 148px;
 }
 
 .posts__text {
@@ -98,38 +105,41 @@
 .posts__title {
   font-family: var(--font-family-base);
   font-size: 22px;
+  font-weight: normal;
 }
 
-.posts__subtitle {
+.posts__more {
   display: flex;
   align-self: center;
-  margin-right: 148px;
   font-family: var(--font-family-base);
   font-size: 16px;
   color: var(--color-secondary);
 }
 
-.posts__content {
+.posts-list {
   display: flex;
+  margin-top: 20px;
   gap: 20px;
   padding-bottom: 32px;
 }
 
 .posts-card {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
   background: white;
-  width: 44%;
+  width: 100%;
   height: 295px;
   padding: 22px;
+  gap: 10px;
+  color: var(--color-dark);
   border-radius: 5px;
 }
 
-.posts-address {
-  padding-top: 17px;
-  font-family: var(--font-family-base);
-  font-size: 18px;
+.posts__pushed {
   display: flex;
-  gap: 15px;
+  gap: 20px;
+  font-size: 18px;
+  font-family: var(--font-family-base);
 }
 
 .works {
@@ -307,7 +317,7 @@
     align-items: center;
   }
 
-  .posts__subtitle {
+  .posts__more {
     display: none;
   }
 

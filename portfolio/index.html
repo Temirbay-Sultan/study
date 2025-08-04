@@ -11,28 +11,26 @@
 
 <body>
     <header>
-        <section class="header">
-            <nav class="header__menu">
-                <ul class="header__menu-list">
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="./Work/work.html">Works</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="./about/blog.html">Blog</a>
-                    </li>
-                    <li class="header__menu-item add-margin">
-                        <a class="header__menu-link" href="./index.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__icon">
-                <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 1H30" stroke="#21243D" stroke-width="1.6" />
-                    <path d="M0 9H30" stroke="#21243D" stroke-width="1.6" />
-                    <path d="M0 17H30" stroke="#21243D" stroke-width="1.6" />
-                </svg>
-            </div>
-        </section>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="./Work/work.html">Works</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="./about/blog.html">Blog</a>
+                </li>
+                <li class="header__menu-item add-margin">
+                    <a class="header__menu-link" href="./index.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__icon">
+            <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 1H30" stroke="#21243D" stroke-width="1.6" />
+                <path d="M0 9H30" stroke="#21243D" stroke-width="1.6" />
+                <path d="M0 17H30" stroke="#21243D" stroke-width="1.6" />
+            </svg>
+        </div>
     </header>
     <main class="content">
         <section class="banner">
@@ -50,9 +48,10 @@
                         </p>
                         <button class="banner__button button-red" type="button">Download Resume</button>
                     </div>
-                    <div class="banner__portfolio-img">
-                        <div class="img-wrapper">
-                            <img src="./images/portfolio-img.png" width="243" height="243" loading="lazy">
+                    <div class="banner__avatar">
+                        <div class="banner__avatar-inner">
+                            <img src="./images/portfolio-img.png" class="banner__avatar-inner-img" width="243"
+                                height="243" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -60,45 +59,38 @@
         </section>
         <section class="posts">
             <div class="container">
-
-                <div class="posts__text">
-                    <div class="posts__title">Recent posts</div>
-                    <div class="posts__subtitle">View all</div>
-                </div>
-                <div class="posts__content">
-                    <div class="posts-card">
-                        <h2 class="card__title">
-                            Making a design system from scratch
-                        </h2>
-                        <div class="posts-address">
-                            <div class="posts-day">12 Feb 2020</div>
-                            <div class="posts-splash">|</div>
-                            <div class="posts-theme">
-                                Design, Pattern
-                            </div>
-                        </div>
-
-                        <div class="card__subtitle">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                        </div>
+                <div class="posts__inner">
+                    <div class="posts__text">
+                        <h2 class="posts__title">Recent posts</h2>
+                        <a href="/" class="posts__more">View all</a>
                     </div>
-                    <div class="posts-card">
-                        <h2 class="card__title">
-                            Creating pixel perfect icons in Figma
-                        </h2>
-                        <div class="posts-address">
-                            <div class="posts-day">12 Feb 2020</div>
-                            <div class="posts-splash">|</div>
-                            <div class="posts-theme">
-                                Figma, Icon Design
-                            </div>
-                        </div>
-
-                        <div class="card__subtitle">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                        </div>
+                    <div class="posts-list">
+                        <a class="card__link" href="/">
+                            <article class="posts-card">
+                                <h2 class="card__title">
+                                    Making a design system from scratch
+                                </h2>
+                                <p class="posts__pushed"> 12 Feb 2020 <span>|</span> Design, Pattern </p>
+                                <p class="card__subtitle">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia
+                                    consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                </p>
+                            </article>
+                        </a>
+                        <a class="card__link" href="/">
+                            <article class="posts-card">
+                                <h2 class="card__title">
+                                    Creating pixel perfect icons in Figma
+                                </h2>
+                                <p class="posts__pushed"> 12 Feb 2020 <span>|</span> Design, Pattern </p>
+                                <p class="card__subtitle">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia
+                                    consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                </p>
+                            </article>
+                        </a>
                     </div>
                 </div>
             </div>

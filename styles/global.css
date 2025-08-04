@@ -163,6 +163,6 @@ a {
 }
 
 .container{
-  width: 1152px;
-  margin: 0 148px;
+  max-width: 1152px;
+  margin: 0 auto;
 }
