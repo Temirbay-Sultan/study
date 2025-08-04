@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio </title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
 </head>
 
 <body>
@@ -35,138 +36,146 @@
     </header>
     <main class="content">
         <section class="banner">
-            <div class="banner__inner">
-                <div class="banner__preview">
-                    <div class="banner__title">
-                        Hi, I am John, <br>
-                        Creative Technologist
+            <div class="container">
+                <div class="banner__inner">
+                    <div class="banner__article">
+                        <h2 class="banner__title">
+                            Hi, I am John, <br>
+                            Creative Technologist
+                        </h2>
+                        <p class="banner__subtitle">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet <br> sint. Velit officia
+                            consequat
+                            duis enim velit mollit. Exercitation veniam <br> consequat sunt nostrud amet.
+                        </p>
+                        <button class="banner__button button-red" type="button">Download Resume</button>
                     </div>
-                    <div class="banner__subtitle">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet <br> sint. Velit officia
-                        consequat
-                        duis enim velit mollit. Exercitation veniam <br> consequat sunt nostrud amet.
-                    </div>
-                    <button class="banner__button button-red">Download Resume</button>
-                </div>
-                <div class="banner__portfolio-img">
-                    <div class="img-wrapper">
-                        <img src="./images/portfolio-img.png" width="243" height="243" loading="lazy">
+                    <div class="banner__portfolio-img">
+                        <div class="img-wrapper">
+                            <img src="./images/portfolio-img.png" width="243" height="243" loading="lazy">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="posts">
-            <div class="posts__text">
-                <div class="posts__title">Recent posts</div>
-                <div class="posts__subtitle">View all</div>
-            </div>
-            <div class="posts__content">
-                <div class="posts-card">
-                    <h2 class="card__title">
-                        Making a design system from scratch
-                    </h2>
-                    <div class="posts-address">
-                        <div class="posts-day">12 Feb 2020</div>
-                        <div class="posts-splash">|</div>
-                        <div class="posts-theme">
-                            Design, Pattern
-                        </div>
-                    </div>
+            <div class="container">
 
-                    <div class="card__subtitle">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </div>
+                <div class="posts__text">
+                    <div class="posts__title">Recent posts</div>
+                    <div class="posts__subtitle">View all</div>
                 </div>
-                <div class="posts-card">
-                    <h2 class="card__title">
-                        Creating pixel perfect icons in Figma
-                    </h2>
-                    <div class="posts-address">
-                        <div class="posts-day">12 Feb 2020</div>
-                        <div class="posts-splash">|</div>
-                        <div class="posts-theme">
-                            Figma, Icon Design
+                <div class="posts__content">
+                    <div class="posts-card">
+                        <h2 class="card__title">
+                            Making a design system from scratch
+                        </h2>
+                        <div class="posts-address">
+                            <div class="posts-day">12 Feb 2020</div>
+                            <div class="posts-splash">|</div>
+                            <div class="posts-theme">
+                                Design, Pattern
+                            </div>
+                        </div>
+
+                        <div class="card__subtitle">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </div>
                     </div>
+                    <div class="posts-card">
+                        <h2 class="card__title">
+                            Creating pixel perfect icons in Figma
+                        </h2>
+                        <div class="posts-address">
+                            <div class="posts-day">12 Feb 2020</div>
+                            <div class="posts-splash">|</div>
+                            <div class="posts-theme">
+                                Figma, Icon Design
+                            </div>
+                        </div>
 
-                    <div class="card__subtitle">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        <div class="card__subtitle">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="works">
-            <div class="works__info">Featured works</div>
-            <div class="works__content">
-                <div class="works__img">
-                    <img src="./images/news-card-img/1.png" alt="site dashboard" class="works__card-imd" loading="lazy"
-                        width="246" height="180">
-                </div>
-                <div class="works__card">
-                    <div class="works__header">
-                        Designing Dashboards
+            <div class="container">
+
+                <div class="works__info">Featured works</div>
+                <div class="works__content">
+                    <div class="works__img">
+                        <img src="./images/news-card-img/1.png" alt="site dashboard" class="works__card-imd"
+                            loading="lazy" width="246" height="180">
                     </div>
-                    <div class="works__card-type">
-                        <div class="works__year btn-dark-blue">
-                            2020
+                    <div class="works__card">
+                        <div class="works__header">
+                            Designing Dashboards
                         </div>
-                        <div class="works__card-type-text">
-                            Dashboard
+                        <div class="works__card-type">
+                            <div class="works__year btn-dark-blue">
+                                2020
+                            </div>
+                            <div class="works__card-type-text">
+                                Dashboard
+                            </div>
                         </div>
-                    </div>
-                    <div class="works__card-subtitle">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </div>
-                </div>
-            </div>
-            <div class="works__border border-margin"></div>
-            <div class="works__content card-margin none">
-                <div class="works__img">
-                    <img src="./images/news-card-img/2.png" alt="site dashboard" class="works__card-imd" loading="lazy"
-                        width="246" height="180">
-                </div>
-                <div class="works__card">
-                    <div class="works__header">
-                        Vibrant Portraits of 2020
-                    </div>
-                    <div class="works__card-type">
-                        <div class="works__year btn-dark-blue">
-                            2018
+                        <div class="works__card-subtitle">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </div>
-                        <div class="works__card-type-text">
-                            Illustration
-                        </div>
-                    </div>
-                    <div class="works__card-subtitle">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                     </div>
                 </div>
-            </div>
-            <div class="works__border border-margin-lot none"></div>
-            <div class="works__content card-margin-lot none">
-                <div class="works__img">
-                    <img src="./images/news-card-img/3.png" alt="site dashboard" class="works__card-imd" loading="lazy"
-                        width="246" height="180">
+                <div class="works__border border-margin"></div>
+                <div class="works__content card-margin none">
+                    <div class="works__img">
+                        <img src="./images/news-card-img/2.png" alt="site dashboard" class="works__card-imd"
+                            loading="lazy" width="246" height="180">
+                    </div>
+                    <div class="works__card">
+                        <div class="works__header">
+                            Vibrant Portraits of 2020
+                        </div>
+                        <div class="works__card-type">
+                            <div class="works__year btn-dark-blue">
+                                2018
+                            </div>
+                            <div class="works__card-type-text">
+                                Illustration
+                            </div>
+                        </div>
+                        <div class="works__card-subtitle">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </div>
+                    </div>
                 </div>
-                <div class="works__card">
-                    <div class="works__header">
-                        36 Days of Malayalam type
+                <div class="works__border border-margin-lot none"></div>
+                <div class="works__content card-margin-lot none">
+                    <div class="works__img">
+                        <img src="./images/news-card-img/3.png" alt="site dashboard" class="works__card-imd"
+                            loading="lazy" width="246" height="180">
                     </div>
-                    <div class="works__card-type">
-                        <div class="works__year btn-dark-blue">
-                            2018
+                    <div class="works__card">
+                        <div class="works__header">
+                            36 Days of Malayalam type
                         </div>
-                        <div class="works__card-type-text">
-                            Typography
+                        <div class="works__card-type">
+                            <div class="works__year btn-dark-blue">
+                                2018
+                            </div>
+                            <div class="works__card-type-text">
+                                Typography
+                            </div>
                         </div>
-                    </div>
-                    <div class="works__card-subtitle">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        <div class="works__card-subtitle">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </div>
                     </div>
                 </div>
             </div>
