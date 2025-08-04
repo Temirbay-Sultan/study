@@ -161,6 +161,12 @@ a {
   text-decoration: none;
 }
 
+.container {
+    max-width: 1152px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 .header__menu-list {
   margin-top: 27px;
   display: flex;
@@ -180,7 +186,11 @@ a {
 
 .banner__inner {
   display: flex;
-  margin: 158px 0 0 148px;
+  padding: 100px 0 0 0;
+}
+
+.banner__preview {
+    width: 60%;
 }
 
 .header__icon {
@@ -219,8 +229,10 @@ a {
 
 .banner__portfolio-img {
   border-radius: 50%;
-  margin-left: 115px;
   flex-shrink: 0;
+  width: 40%;
+  display: flex;
+  justify-content: center;
 }
 
 .header__icon {
