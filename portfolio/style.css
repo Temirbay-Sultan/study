@@ -1,0 +1,520 @@
+@font-face {
+  font-family: 'Heebo';
+  src: url('./fonts/Heebo-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Heebo';
+  src: url('./fonts/Heebo-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/**
+  Нормализация блочной модели
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+  Убираем внутренние отступы слева тегам списков,
+  у которых есть атрибут class
+ */
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+/**
+  Убираем внешние отступы body и двум другим тегам,
+  у которых есть атрибут class
+ */
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+/**
+  Убираем внешние отступы вертикали нужным тегам,
+  у которых есть атрибут class
+ */
+:where(h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  dl):where([class]) {
+  margin-block: 0;
+
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+/**
+  Убираем стандартный маркер маркированному списку,
+  у которого есть атрибут class
+ */
+:where(ul[class]) {
+  list-style: none;
+}
+
+/**
+  Упрощаем работу с изображениями
+ */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/**
+  Наследуем свойства шрифт для полей ввода
+ */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+.input {
+  height: var(--input-height);
+  padding-inline: 25px;
+  width: 100px;
+  color: var(--color-light);
+  background-color: transparent;
+  border: 1px solid var(--color-light-gray);
+  border-radius: var(--border-radius);
+}
+
+.input::placeholder {
+  color: var(--color-light-gray);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+html {
+  /**
+    Пригодится в большинстве ситуаций
+    (когда, например, нужно будет "прижать" футер к низу сайта)
+   */
+  height: 100%;
+  /**
+    Плавный скролл
+   */
+  scroll-behavior: smooth;
+}
+
+body {
+  /**
+    Пригодится в большинстве ситуаций
+    (когда, например, нужно будет "прижать" футер к низу сайта)
+   */
+  min-height: 100%;
+  /**
+    Унифицированный интерлиньяж
+   */
+  line-height: 1.5;
+}
+
+/**
+  Удаляем все анимации и переходы для людей,
+  которые предпочитают их не использовать
+ */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --font-family-base: 'Heebo', sans-serif;
+  --color-dark: #000000;
+  --color-dark-blue: #21243D;
+  --color-primary: #FF6464;
+  --color-secondary: #00A8CC;
+  --color-posts: #EDF7FA;
+  --color-light: #8695A4;
+
+  /*надо добавить специальный цвет для border --color-light: rgba(134, 149, 164, 0.2);*/
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__menu-list {
+  margin-top: 27px;
+  display: flex;
+  justify-content: end;
+  gap: 33px;
+}
+
+.add-margin {
+  margin-right: 66px;
+}
+
+.header__menu-link {
+  color: var(--color-dark);
+  font-family: var(--font-family-base);
+  font-weight: 500;
+}
+
+.banner__inner {
+  display: flex;
+  margin: 158px 0 0 148px;
+}
+
+.header__icon {
+  display: none;
+}
+
+.banner__title {
+  display: inline-block;
+  font-family: var(--font-family-base);
+  font-weight: 700;
+  color: var(--color-dark-blue);
+  font-size: 44px;
+}
+
+.banner__subtitle {
+  margin-top: 40px;
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  color: var(--color-dark-blue);
+  line-height: 1;
+}
+
+.button-red {
+  height: 47px;
+  width: 208px;
+  font-weight: 700;
+  margin-top: 38px;
+  font-family: var(--font-family-base);
+  background: var(--color-primary);
+  border: none;
+  color: white;
+  border-radius: 3px;
+  margin-bottom: 50px;
+
+}
+
+.banner__portfolio-img {
+  border-radius: 50%;
+  margin-left: 115px;
+  flex-shrink: 0;
+}
+
+.header__icon {
+  margin-bottom: 71px;
+}
+
+.posts {
+  background: var(--color-posts);
+  padding-left: 148px;
+}
+
+.posts__text {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.posts__title {
+  font-family: var(--font-family-base);
+  font-size: 22px;
+}
+
+.posts__subtitle {
+  display: flex;
+  align-self: center;
+  margin-right: 148px;
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  color: var(--color-secondary);
+}
+
+.posts__content {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 32px;
+}
+
+.posts-card {
+  margin-top: 20px;
+  background: white;
+  width: 44%;
+  height: 295px;
+  padding: 22px;
+  border-radius: 5px;
+}
+
+.posts-address {
+  padding-top: 17px;
+  font-family: var(--font-family-base);
+  font-size: 18px;
+  display: flex;
+  gap: 15px;
+}
+
+.works {
+  padding-top: 30px;
+  padding-left: 148px;
+  padding-right: 148px;
+}
+
+.works__info {
+  font-family: var(--font-family-base);
+  font-size: 22px;
+  color: var(--color-dark-blue);
+}
+
+.works__content {
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.works__card {
+  margin-left: 18px;
+}
+
+.works__header {
+  display: block;
+  font-family: var(--font-family-base);
+  font-size: 30px;
+  color: var(--color-dark-blue);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.works__card-type {
+  display: flex;
+  gap: 36px;
+  margin-top: 10px;
+}
+
+.btn-dark-blue {
+  width: 62px;
+  height: 25px;
+  font-family: var(--font-family-base);
+  background-color: var(--color-dark-blue);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.works__card-type-text {
+  display: flex;
+  align-items: start;
+  font-size: 20px;
+  font-family: var(--font-family-base);
+  color: var(--color-light);
+}
+
+.works__card-subtitle {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: var(--font-family-base);
+  color: var(--color-dark-blue);
+}
+
+.works__border {
+  border: 1px solid #E0E0E0;
+}
+
+.border-margin {
+  margin-top: 10px;
+}
+
+.border-margin-lot {
+  margin-top: 30px;
+}
+
+.card-margin {
+  margin-top: 20px;
+}
+
+.card-margin-lot {
+  margin-top: 30px;
+}
+
+
+.footer__logo {
+  padding-top: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.footer__text {
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  padding-top: 26px;
+  padding-bottom: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .banner__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header__icon {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .banner__preview {
+    order: 2;
+  }
+
+  .banner__portfolio-img {
+    margin-top: 50px;
+    order: 1;
+    margin-left: 0;
+  }
+
+  .banner__title {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .banner__subtitle {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .banner__button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .button-red {
+    margin-bottom: 40px;
+  }
+
+  .posts {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .posts__subtitle {
+    display: none;
+  }
+
+  .posts__title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .posts__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .posts__subtitle {
+    max-width: 0;
+  }
+
+  .posts-card {
+    width: 90%;
+  }
+
+  .works {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .works__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
+
+  .works__content {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .works__img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .works__card-imd {
+    width: 100%;
+    height: 100%;
+  }
+
+  .works__card {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .border-margin {
+    display: none;
+  }
+
+  .none {
+    display: none;
+  }
+}
