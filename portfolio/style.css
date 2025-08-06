@@ -1,166 +1,3 @@
-@font-face {
-  font-family: 'Heebo';
-  src: url('./fonts/Heebo-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Heebo';
-  src: url('./fonts/Heebo-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/**
-  Нормализация блочной модели
- */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/**
-  Убираем внутренние отступы слева тегам списков,
-  у которых есть атрибут class
- */
-:where(ul, ol):where([class]) {
-  padding-left: 0;
-}
-
-/**
-  Убираем внешние отступы body и двум другим тегам,
-  у которых есть атрибут class
- */
-body,
-:where(blockquote, figure):where([class]) {
-  margin: 0;
-}
-
-/**
-  Убираем внешние отступы вертикали нужным тегам,
-  у которых есть атрибут class
- */
-:where(h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul,
-  ol,
-  dl):where([class]) {
-  margin-block: 0;
-
-}
-
-:where(dd[class]) {
-  margin-left: 0;
-}
-
-/**
-  Убираем стандартный маркер маркированному списку,
-  у которого есть атрибут class
- */
-:where(ul[class]) {
-  list-style: none;
-}
-
-/**
-  Упрощаем работу с изображениями
- */
-img {
-  display: block;
-  max-width: 100%;
-}
-
-/**
-  Наследуем свойства шрифт для полей ввода
- */
-input,
-textarea,
-select,
-button {
-  font: inherit;
-}
-
-.input {
-  height: var(--input-height);
-  padding-inline: 25px;
-  width: 100px;
-  color: var(--color-light);
-  background-color: transparent;
-  border: 1px solid var(--color-light-gray);
-  border-radius: var(--border-radius);
-}
-
-.input::placeholder {
-  color: var(--color-light-gray);
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-html {
-  /**
-    Пригодится в большинстве ситуаций
-    (когда, например, нужно будет "прижать" футер к низу сайта)
-   */
-  height: 100%;
-  /**
-    Плавный скролл
-   */
-  scroll-behavior: smooth;
-}
-
-body {
-  /**
-    Пригодится в большинстве ситуаций
-    (когда, например, нужно будет "прижать" футер к низу сайта)
-   */
-  min-height: 100%;
-  /**
-    Унифицированный интерлиньяж
-   */
-  line-height: 1.5;
-}
-
-/**
-  Удаляем все анимации и переходы для людей,
-  которые предпочитают их не использовать
- */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-:root {
-  --font-family-base: 'Heebo', sans-serif;
-  --color-dark: #000000;
-  --color-dark-blue: #21243D;
-  --color-primary: #FF6464;
-  --color-secondary: #00A8CC;
-  --color-posts: #EDF7FA;
-  --color-light: #8695A4;
-
-  /*надо добавить специальный цвет для border --color-light: rgba(134, 149, 164, 0.2);*/
-}
-
-a {
-  text-decoration: none;
-}
-
 .header__menu-list {
   margin-top: 27px;
   display: flex;
@@ -178,9 +15,24 @@ a {
   font-weight: 500;
 }
 
+.header__menu-item {
+  font-style: 20px;
+  font-family: var(--font-family-base);
+}
+
 .banner__inner {
   display: flex;
-  margin: 158px 0 0 148px;
+  padding: 150px 0 50px 0;
+}
+
+.banner__article {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.banner__article {
+  width: 60%;
 }
 
 .header__icon {
@@ -196,7 +48,6 @@ a {
 }
 
 .banner__subtitle {
-  margin-top: 40px;
   font-family: var(--font-family-base);
   font-size: 16px;
   color: var(--color-dark-blue);
@@ -207,29 +58,42 @@ a {
   height: 47px;
   width: 208px;
   font-weight: 700;
-  margin-top: 38px;
   font-family: var(--font-family-base);
   background: var(--color-primary);
   border: none;
   color: white;
   border-radius: 3px;
-  margin-bottom: 50px;
-
+  margin-bottom: 50px; /* удалить */
 }
 
-.banner__portfolio-img {
+.banner__avatar {
   border-radius: 50%;
-  margin-left: 115px;
+  width: 40%;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
 }
 
-.header__icon {
-  margin-bottom: 71px;
+.banner__avatar-inner {
+  height: fit-content;
+  position: relative;
+}
+
+.banner__avatar-inner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  background-color: #EDF7FA;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .posts {
   background: var(--color-posts);
-  padding-left: 148px;
 }
 
 .posts__text {
@@ -238,63 +102,59 @@ a {
   justify-content: space-between;
 }
 
-.posts__title {
-  font-family: var(--font-family-base);
-  font-size: 22px;
-}
-
-.posts__subtitle {
+.posts__more {
   display: flex;
   align-self: center;
-  margin-right: 148px;
   font-family: var(--font-family-base);
   font-size: 16px;
   color: var(--color-secondary);
 }
 
-.posts__content {
+.posts-list {
   display: flex;
+  margin-top: 20px;
   gap: 20px;
   padding-bottom: 32px;
 }
 
 .posts-card {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
   background: white;
-  width: 44%;
+  width: 100%;
   height: 295px;
   padding: 22px;
+  gap: 10px;
+  color: var(--color-dark);
   border-radius: 5px;
 }
 
-.posts-address {
-  padding-top: 17px;
-  font-family: var(--font-family-base);
-  font-size: 18px;
+.posts__pushed {
   display: flex;
-  gap: 15px;
+  gap: 20px;
+  font-size: 18px;
+  font-family: var(--font-family-base);
 }
 
-.works {
-  padding-top: 30px;
-  padding-left: 148px;
-  padding-right: 148px;
-}
-
-.works__info {
+.works__title {
   font-family: var(--font-family-base);
   font-size: 22px;
+  padding: 30px 0 ;
   color: var(--color-dark-blue);
 }
 
-.works__content {
+.works__card {
   display: flex;
   align-items: flex-start;
-
+  padding: 0 0 15px 0;
+  /* border-bottom: 1px solid var(--color-grey-5); */
 }
 
-.works__card {
+.works__card-meta {
   margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .works__header {
@@ -312,6 +172,11 @@ a {
   display: flex;
   gap: 36px;
   margin-top: 10px;
+  /* align-items: center */
+}
+
+.works__img {
+  flex-shrink: 0;
 }
 
 .btn-dark-blue {
@@ -332,6 +197,7 @@ a {
   display: flex;
   align-items: start;
   font-size: 20px;
+  font-weight: 300;
   font-family: var(--font-family-base);
   color: var(--color-light);
 }
@@ -363,9 +229,8 @@ a {
   margin-top: 30px;
 }
 
-
-.footer__logo {
-  padding-top: 134px;
+.footer__socials {
+  padding-top: 124px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -403,7 +268,7 @@ a {
     display: none;
   }
 
-  .banner__preview {
+  .banner__article {
     order: 2;
   }
 
@@ -450,7 +315,7 @@ a {
     align-items: center;
   }
 
-  .posts__subtitle {
+  .posts__more {
     display: none;
   }
 
@@ -481,14 +346,14 @@ a {
     margin: 0 auto;
   }
 
-  .works__info {
+  .works__title {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 15px;
   }
 
-  .works__content {
+  .works__inner {
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -499,7 +364,7 @@ a {
     height: 250px;
   }
 
-  .works__card-imd {
+  .works__card-img {
     width: 100%;
     height: 100%;
   }
@@ -514,7 +379,7 @@ a {
     display: none;
   }
 
-  .none {
+  .is-hidden {
     display: none;
   }
 }
