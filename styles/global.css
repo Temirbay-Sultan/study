@@ -154,6 +154,7 @@ body {
     --color-posts: #EDF7FA;
     --color-light: #8695A4;
     --color-rectangle: #EDF7FA;
+    /* --color-grey-5: #E5E5EA; */
 
     /*надо добавить специальный цвет для border --color-light: rgba(134, 149, 164, 0.2);*/
 }
@@ -166,6 +167,8 @@ a {
     max-width: 1152px;
     margin: 0 auto;
 }
+
+/* .container-xl */
 
 .title-styling {
     font-family: var(--font-family-base);
