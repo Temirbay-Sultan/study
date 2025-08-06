@@ -154,24 +154,48 @@ body {
     --color-posts: #EDF7FA;
     --color-light: #8695A4;
     --color-rectangle: #EDF7FA;
-    /* --color-grey-5: #E5E5EA; */
+    --color-grey-5: #E5E5EA;
 
-    /*надо добавить специальный цвет для border --color-light: rgba(134, 149, 164, 0.2);*/
 }
 
 a {
     text-decoration: none;
 }
 
+button {
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}
+
 .container {
     max-width: 1152px;
     margin: 0 auto;
 }
+.container-xl {
+    max-width: 1440px;
+}
 
-/* .container-xl */
-
-.title-styling {
+.title-section {
     font-family: var(--font-family-base);
     font-size: 22px;
     font-weight: normal;
+}
+
+button:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.link-base:hover {
+    text-decoration: underline;
+}
+
+.svg-base:hover {
+    cursor: pointer;
 }

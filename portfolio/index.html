@@ -6,31 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio </title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
 </head>
-<!-- hover effects for buttons and a -->
+
 <body>
     <header>
-        <nav class="header__menu">
-            <ul class="header__menu-list">
-                <li class="header__menu-item">
-                    <a class="header__menu-link" href="./Work/work.html">Works</a>
-                </li>
-                <li class="header__menu-item">
-                    <a class="header__menu-link" href="./about/blog.html">Blog</a>
-                </li>
-                <li class="header__menu-item add-margin">
-                    <a class="header__menu-link" href="./index.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- button header__button -->
-        <div class="header__icon">
-            <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 1H30" stroke="#21243D" stroke-width="1.6" />
-                <path d="M0 9H30" stroke="#21243D" stroke-width="1.6" />
-                <path d="M0 17H30" stroke="#21243D" stroke-width="1.6" />
-            </svg>
+        <div class="container-xl">
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link link-base" href="./Work/work.html">Works</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link link-base" href="./about/blog.html">Blog</a>
+                    </li>
+                    <li class="header__menu-item link-base add-margin">
+                        <a class="header__menu-link" href="./index.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__button" type="button">
+                <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1H30" stroke="#21243D" stroke-width="1.6" />
+                    <path d="M0 9H30" stroke="#21243D" stroke-width="1.6" />
+                    <path d="M0 17H30" stroke="#21243D" stroke-width="1.6" />
+                </svg>
+            </button>
         </div>
     </header>
     <main class="content">
@@ -51,8 +52,7 @@
                     </div>
                     <div class="banner__avatar">
                         <div class="banner__avatar-inner">
-                            <img src="./images/portfolio-img.png" class="banner__avatar-inner-img" width="243"
-                                height="243" loading="lazy">
+                            <img src="./images/image.png" class="banner__avatar-inner-img" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -61,22 +61,16 @@
         <section class="posts">
             <div class="container">
                 <div class="posts__inner">
-                    <!-- posts__nav -->
-                    <div class="posts__text">
-                        <h2 class="posts__title title-styling">Recent posts</h2>
-                        <a href="/" class="posts__more">View all</a>
+                    <div class="posts__nav">
+                        <h2 class="posts__title title-section">Recent posts</h2>
+                        <a href="#" class="posts__more link-base">View all</a>
                     </div>
-                    <!-- posts__list -->
-                    <div class="posts-list">
-                    <!-- posts__card -->
-                    <!-- # -->
-                        <a class="card__link" href="/">
-                            <article class="posts-card">
-                                <!-- posts__card-title -->
-                                <!-- h3 -->
-                                <h2 class="card__title">
+                    <div class="posts__list">
+                        <a class="card__link" href="#">
+                            <article class="posts__card">
+                                <h3 class="posts__card-title">
                                     Making a design system from scratch
-                                </h2>
+                                </h3>
                                 <p class="posts__pushed"> 12 Feb 2020 <span>|</span> Design, Pattern </p>
                                 <p class="card__subtitle">
                                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
@@ -85,9 +79,9 @@
                                 </p>
                             </article>
                         </a>
-                        <a class="card__link" href="/">
-                            <article class="posts-card">
-                                <h3 class="card__title">
+                        <a class="card__link" href="#">
+                            <article class="posts__card">
+                                <h3 class="posts__card-title">
                                     Creating pixel perfect icons in Figma
                                 </h3>
                                 <p class="posts__pushed"> 12 Feb 2020 <span>|</span> Design, Pattern </p>
@@ -105,23 +99,16 @@
         <section class="works">
             <div class="container">
                 <div class="works__inner">
-                    <!-- title-section -->
-                    <h2 class="works__title title-styling">Featured works</h2>
+                    <h2 class="works__title title-section">Featured works</h2>
                     <div class="works__list">
                         <article class="works__card">
-                            <!-- works__img delete -->
-                            <div class="works__img">
-                                <!-- widht height on css -->
-                                <img src="./images/news-card-img/1.png" alt="site dashboard" class="works__card-img"
-                                    loading="lazy" width="246" height="180">
-                            </div>
+                            <img src="./images/news-card-img/1.png" alt="site dashboard" class="works__card-img"
+                                loading="lazy">
                             <div class="works__card-meta">
-                                <!-- works__card-title -->
-                                <h3 class="works__header">
+                                <h3 class="works__card-title">
                                     Designing Dashboards
                                 </h3>
-                                <!-- works__card-info -->
-                                <div class="works__card-type">
+                                <div class="works__card-info">
                                     <span class="btn-dark-blue">
                                         2020
                                     </span>
@@ -136,18 +123,14 @@
                                 </p>
                             </div>
                         </article>
-                        <!-- delete border -->
-                        <div class="works__border border-margin"></div>
-                        <article class="works__card card-margin is-hidden">
-                            <div class="works__img">
-                                <img src="./images/news-card-img/2.png" alt="site dashboard" class="works__card-img"
-                                    loading="lazy" width="246" height="180">
-                            </div>
+                        <article class="works__card is-hidden">
+                            <img src="./images/news-card-img/2.png" alt="site dashboard" class="works__card-img"
+                                loading="lazy">
                             <div class="works__card-meta">
-                                <h3 class="works__header">
+                                <h3 class="works__card-title">
                                     Vibrant Portraits of 2020
                                 </h3>
-                                <div class="works__card-type">
+                                <div class="works__card-info">
                                     <span class="btn-dark-blue">
                                         2018
                                     </span>
@@ -163,17 +146,14 @@
                                 </p>
                             </div>
                         </article>
-                        <div class="works__border border-margin-lot is-hidden"></div>
-                        <article class="works__card card-margin-lot is-hidden">
-                            <div class="works__img">
-                                <img src="./images/news-card-img/3.png" alt="site dashboard" class="works__card-img"
-                                    loading="lazy" width="246" height="180">
-                            </div>
+                        <article class="works__card is-hidden">
+                            <img src="./images/news-card-img/3.png" alt="site dashboard" class="works__card-img"
+                                loading="lazy">
                             <div class="works__card-meta">
-                                <h2 class="works__header">
+                                <h2 class="works__card-title">
                                     36 Days of Malayalam type
                                 </h2>
-                                <div class="works__card-type">
+                                <div class="works__card-info">
                                     <span class="btn-dark-blue">
                                         2018
                                     </span>
@@ -189,7 +169,6 @@
                                 </p>
                             </div>
                         </article>
-                        <div class="works__border border-margin-lot"></div>
                     </div>
                 </div>
             </div>
@@ -233,9 +212,9 @@
                     </svg>
                 </a>
             </div>
-            <!-- p -->
-            <div class="footer__text">Copyright ©2020 All rights reserved</div>
+            <p class="footer__text">Copyright ©2020 All rights reserved</p>
         </div>
     </footer>
 </body>
+
 </html>

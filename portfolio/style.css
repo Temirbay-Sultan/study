@@ -35,7 +35,7 @@
   width: 60%;
 }
 
-.header__icon {
+.header__button {
   display: none;
 }
 
@@ -54,6 +54,12 @@
   line-height: 1;
 }
 
+.banner__avatar-inner-img{
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+}
+
 .button-red {
   height: 47px;
   width: 208px;
@@ -63,7 +69,6 @@
   border: none;
   color: white;
   border-radius: 3px;
-  margin-bottom: 50px; /* удалить */
 }
 
 .banner__avatar {
@@ -96,7 +101,7 @@
   background: var(--color-posts);
 }
 
-.posts__text {
+.posts__nav {
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -110,14 +115,14 @@
   color: var(--color-secondary);
 }
 
-.posts-list {
+.posts__list {
   display: flex;
   margin-top: 20px;
   gap: 20px;
   padding-bottom: 32px;
 }
 
-.posts-card {
+.posts__card {
   display: flex;
   flex-direction: column;
   background: white;
@@ -139,15 +144,15 @@
 .works__title {
   font-family: var(--font-family-base);
   font-size: 22px;
-  padding: 30px 0 ;
+  padding: 30px 0;
   color: var(--color-dark-blue);
 }
 
 .works__card {
   display: flex;
   align-items: flex-start;
-  padding: 0 0 15px 0;
-  /* border-bottom: 1px solid var(--color-grey-5); */
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid var(--color-grey-5);
 }
 
 .works__card-meta {
@@ -157,7 +162,7 @@
   gap: 20px;
 }
 
-.works__header {
+.works__card-title {
   display: block;
   font-family: var(--font-family-base);
   font-size: 30px;
@@ -168,14 +173,14 @@
   line-height: 1;
 }
 
-.works__card-type {
+.works__card-info {
   display: flex;
   gap: 36px;
   margin-top: 10px;
-  /* align-items: center */
+  align-items: center;
 }
 
-.works__img {
+.works__card-img {
   flex-shrink: 0;
 }
 
@@ -203,30 +208,10 @@
 }
 
 .works__card-subtitle {
-  margin-top: 10px;
+  padding-top: 10px;
   font-size: 16px;
   font-family: var(--font-family-base);
   color: var(--color-dark-blue);
-}
-
-.works__border {
-  border: 1px solid #E0E0E0;
-}
-
-.border-margin {
-  margin-top: 10px;
-}
-
-.border-margin-lot {
-  margin-top: 30px;
-}
-
-.card-margin {
-  margin-top: 20px;
-}
-
-.card-margin-lot {
-  margin-top: 30px;
 }
 
 .footer__socials {
@@ -235,6 +220,15 @@
   justify-content: center;
   align-items: center;
   gap: 35px;
+}
+
+.footer__socials-item {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer__socials-item:hover {
+  transform: translateY(-4px);
 }
 
 .footer__text {
@@ -253,15 +247,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
     margin: 0 auto;
+    gap: 30px;
     text-align: center;
   }
 
-  .header__icon {
+  .header__button {
     display: flex;
     justify-content: flex-end;
-    margin: 20px;
-
+    padding: 20px;
   }
 
   .header__menu {
@@ -288,27 +283,20 @@
   }
 
   .banner__subtitle {
-    margin-top: 10px;
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
   }
 
   .banner__button {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 150px;
     text-align: center;
     align-items: center;
   }
 
-  .button-red {
-    margin-bottom: 40px;
-  }
-
   .posts {
-    padding: 0;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -322,15 +310,16 @@
   .posts__title {
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
   }
 
-  .posts__content {
+  .posts__list {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     margin: 0 auto;
+    padding: 0 10px;
   }
 
   .posts__subtitle {
@@ -338,7 +327,7 @@
   }
 
   .posts-card {
-    width: 90%;
+    width: 100%;
   }
 
   .works {
@@ -350,7 +339,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px;
+    padding:20px 0;
   }
 
   .works__inner {
@@ -359,27 +348,41 @@
     align-items: center;
   }
 
-  .works__img {
-    width: 400px;
-    height: 250px;
-  }
-
   .works__card-img {
     width: 100%;
     height: 100%;
+    padding: 0 10px;
+  }
+
+  .works__card-title{
+    padding-top: 20px;
+  }
+
+  .works__card-meta{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .works__card {
     display: flex;
     flex-direction: column;
-
+    padding: 0;
   }
 
-  .border-margin {
-    display: none;
+  .works__card-title{
+    font-size: 24px;
+  }
+
+  .works__card-subtitle{
+    padding: 10px 0;
   }
 
   .is-hidden {
     display: none;
+  }
+
+  .posts__nav{
+    padding: 20px 0;
   }
 }
