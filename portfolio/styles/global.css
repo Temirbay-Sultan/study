@@ -120,6 +120,12 @@ html {
     scroll-behavior: smooth;
 }
 
+html,
+html * {
+    font-family: var(--font-family-base);
+    color: var(--color-dark-blue)
+}
+
 body {
     /**
     Пригодится в большинстве ситуаций
@@ -155,7 +161,7 @@ body {
     --color-light: #8695A4;
     --color-rectangle: #EDF7FA;
     --color-grey-5: #E5E5EA;
-
+    --color-white: #ffffff;
 }
 
 a {
@@ -165,35 +171,48 @@ a {
 button {
     background: transparent;
     border: none;
-    width: 100%;
+    width: fit-content;
     margin: 0;
     outline: none;
     cursor: pointer;
     padding: 0;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
 }
 
 .container {
-    max-width: 1152px;
+    max-width: 1192px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-xl {
+    max-width: 1520px;
+    padding: 0 40px;
     margin: 0 auto;
 }
-.container-xl {
-    max-width: 1440px;
+
+@media (max-width: 767px) {
+    .container-xl {
+        padding: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 .title-section {
-    font-family: var(--font-family-base);
     font-size: 22px;
     font-weight: normal;
 }
 
-button:hover {
+.banner__button:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
     cursor: pointer;
 }
 
 .link-base:hover {
-    text-decoration: underline;
+    color: var(--color-primary);
 }
 
 .svg-base:hover {

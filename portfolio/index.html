@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./styles/global.css" />
 </head>
-
 <body>
-    <header>
+    <header class="header">
         <div class="container-xl">
             <nav class="header__menu">
                 <ul class="header__menu-list">
@@ -20,8 +19,8 @@
                     <li class="header__menu-item">
                         <a class="header__menu-link link-base" href="./about/blog.html">Blog</a>
                     </li>
-                    <li class="header__menu-item link-base add-margin">
-                        <a class="header__menu-link" href="./index.html">Contact</a>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link link-base" href="./index.html">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -52,7 +51,8 @@
                     </div>
                     <div class="banner__avatar">
                         <div class="banner__avatar-inner">
-                            <img src="./images/image.png" class="banner__avatar-inner-img" loading="lazy">
+                            <img src="./images/image.png" class="banner__avatar-inner-img" loading="lazy"
+                                alt="Darchan portrait">
                         </div>
                     </div>
                 </div>
@@ -101,74 +101,83 @@
                 <div class="works__inner">
                     <h2 class="works__title title-section">Featured works</h2>
                     <div class="works__list">
-                        <article class="works__card">
-                            <img src="./images/news-card-img/1.png" alt="site dashboard" class="works__card-img"
-                                loading="lazy">
-                            <div class="works__card-meta">
-                                <h3 class="works__card-title">
-                                    Designing Dashboards
-                                </h3>
-                                <div class="works__card-info">
-                                    <span class="btn-dark-blue">
-                                        2020
-                                    </span>
-                                    <p class="works__card-type-text">
-                                        Dashboard
+                        <a href="#" class="works__card-link">
+                            <article class="works__card">
+                                <img src="./images/news-card-img/1.png" alt="site dashboard" class="works__card-img"
+                                    loading="lazy">
+                                <div class="works__card-meta">
+                                    <h3 class="works__card-title">
+                                        Designing Dashboards
+                                    </h3>
+                                    <div class="works__card-info">
+                                        <span class="btn-dark-blue">
+                                            2020
+                                        </span>
+                                        <p class="works__card-type-text">
+                                            Dashboard
+                                        </p>
+                                    </div>
+                                    <p class="works__card-subtitle">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                        officia
+                                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                        amet.
                                     </p>
                                 </div>
-                                <p class="works__card-subtitle">
-                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                                    officia
-                                    consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                                </p>
-                            </div>
-                        </article>
-                        <article class="works__card is-hidden">
-                            <img src="./images/news-card-img/2.png" alt="site dashboard" class="works__card-img"
-                                loading="lazy">
-                            <div class="works__card-meta">
-                                <h3 class="works__card-title">
-                                    Vibrant Portraits of 2020
-                                </h3>
-                                <div class="works__card-info">
-                                    <span class="btn-dark-blue">
-                                        2018
-                                    </span>
-                                    <p class="works__card-type-text">
-                                        Illustration
+
+                            </article>
+                        </a>
+                        <a href="#" class="works__card-link">
+                            <article class="works__card is-hidden">
+                                <img src="./images/news-card-img/2.png" alt="site dashboard" class="works__card-img"
+                                    loading="lazy">
+                                <div class="works__card-meta">
+                                    <h3 class="works__card-title">
+                                        Vibrant Portraits of 2020
+                                    </h3>
+                                    <div class="works__card-info">
+                                        <span class="btn-dark-blue">
+                                            2018
+                                        </span>
+                                        <p class="works__card-type-text">
+                                            Illustration
+                                        </p>
+                                    </div>
+                                    <p class="works__card-subtitle">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                        officia
+                                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                        amet.
                                     </p>
                                 </div>
-                                <p class="works__card-subtitle">
-                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                                    officia
-                                    consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                                    amet.
-                                </p>
-                            </div>
-                        </article>
-                        <article class="works__card is-hidden">
-                            <img src="./images/news-card-img/3.png" alt="site dashboard" class="works__card-img"
-                                loading="lazy">
-                            <div class="works__card-meta">
-                                <h2 class="works__card-title">
-                                    36 Days of Malayalam type
-                                </h2>
-                                <div class="works__card-info">
-                                    <span class="btn-dark-blue">
-                                        2018
-                                    </span>
-                                    <p class="works__card-type-text">
-                                        Typography
+
+                            </article>
+                        </a>
+                        <a href="#" class="works__card-link">
+                            <article class="works__card is-hidden">
+                                <img src="./images/news-card-img/3.png" alt="site dashboard" class="works__card-img"
+                                    loading="lazy">
+                                <div class="works__card-meta">
+                                    <h2 class="works__card-title">
+                                        36 Days of Malayalam type
+                                    </h2>
+                                    <div class="works__card-info">
+                                        <span class="btn-dark-blue">
+                                            2018
+                                        </span>
+                                        <p class="works__card-type-text">
+                                            Typography
+                                        </p>
+                                    </div>
+                                    <p class="works__card-subtitle">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                        officia
+                                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                        amet.
                                     </p>
                                 </div>
-                                <p class="works__card-subtitle">
-                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                                    officia
-                                    consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                                    amet.
-                                </p>
-                            </div>
-                        </article>
+                            </article>
+                        </a>
                     </div>
                 </div>
             </div>
