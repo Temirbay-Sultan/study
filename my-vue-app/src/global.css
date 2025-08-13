@@ -144,6 +144,7 @@ body {
     --color-blue-600: #2563EB;
     --color-blue-gray-600: #475569;
     --color-blue-gray-300: #CBD5E1;
+    --color-blue-gray-100: #F1F5F9;
     --input-height: 40px;
     --border-radius: 8px;
     --border: 1px solid var(--color-light);
@@ -202,11 +203,17 @@ a {
     justify-content: center;
 }
 
-.type{
+.type {
     color: var(--color-blue-600);
     font-size: 16px;
 }
 
+.base{
+    color: var(--color-blue-gray-600);
+    font-size: 16px;
+    font-weight: 300;
+}
+
 .type svg {
-  fill: currentColor;
+    fill: currentColor;
 }

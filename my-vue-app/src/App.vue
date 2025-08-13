@@ -174,6 +174,116 @@
       </div>
     </div>
   </section>
+
+  <section class="ease">
+    <div class="container">
+      <div class="ease__inner">
+        <div class="ease__image-container">
+          <article class="ease__article">
+            <h2 class="ease__title">Problems come and get solved with ease</h2>
+            <p class="ease__description">Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque
+              pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada
+              placerat arcu at enim elit in accumsan.</p>
+
+            <a href="#" class="ease__link type">
+              Improve workflow
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.586 5.65701L6.636 1.70701C6.45384 1.51841 6.35305 1.26581 6.35533 1.00361C6.3576 0.741412 6.46277 0.4906 6.64818 0.305192C6.83359 0.119784 7.0844 0.0146148 7.3466 0.0123364C7.6088 0.010058 7.8614 0.110852 8.05 0.29301L13.707 5.95001C13.8002 6.04266 13.8741 6.15282 13.9246 6.27416C13.9751 6.39549 14.001 6.5256 14.001 6.65701C14.001 6.78842 13.9751 6.91853 13.9246 7.03986C13.8741 7.1612 13.8002 7.27136 13.707 7.36401L8.05 13.021C7.95775 13.1165 7.84741 13.1927 7.7254 13.2451C7.6034 13.2975 7.47218 13.3251 7.3394 13.3263C7.20662 13.3274 7.07494 13.3021 6.95205 13.2518C6.82915 13.2016 6.7175 13.1273 6.62361 13.0334C6.52971 12.9395 6.45546 12.8279 6.40518 12.705C6.3549 12.5821 6.3296 12.4504 6.33075 12.3176C6.3319 12.1848 6.35949 12.0536 6.4119 11.9316C6.46431 11.8096 6.54049 11.6993 6.636 11.607L10.586 7.65701H1C0.734784 7.65701 0.48043 7.55165 0.292893 7.36412C0.105357 7.17658 0 6.92223 0 6.65701C0 6.39179 0.105357 6.13744 0.292893 5.9499C0.48043 5.76237 0.734784 5.65701 1 5.65701H10.586Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="workflow">
+    <div class="container">
+      <div class="workflow__inner">
+        <article class="workflow__article">
+          <h2 class="workflow__title">
+            Improve workflow
+          </h2>
+          <table class="workflow__table">
+            <tr>
+              <td>Research</td>
+              <td>Plan</td>
+              <td>Design</td>
+            </tr>
+          </table>
+
+          <p class="workflow__description">Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque
+            pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada
+            placerat arcu at enim elit in accumsan.</p>
+
+          <a href="#" class="workflow__link type">
+            Check the tools
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.586 5.65701L6.636 1.70701C6.45384 1.51841 6.35305 1.26581 6.35533 1.00361C6.3576 0.741412 6.46277 0.4906 6.64818 0.305192C6.83359 0.119784 7.0844 0.0146148 7.3466 0.0123364C7.6088 0.010058 7.8614 0.110852 8.05 0.29301L13.707 5.95001C13.8002 6.04266 13.8741 6.15282 13.9246 6.27416C13.9751 6.39549 14.001 6.5256 14.001 6.65701C14.001 6.78842 13.9751 6.91853 13.9246 7.03986C13.8741 7.1612 13.8002 7.27136 13.707 7.36401L8.05 13.021C7.95775 13.1165 7.84741 13.1927 7.7254 13.2451C7.6034 13.2975 7.47218 13.3251 7.3394 13.3263C7.20662 13.3274 7.07494 13.3021 6.95205 13.2518C6.82915 13.2016 6.7175 13.1273 6.62361 13.0334C6.52971 12.9395 6.45546 12.8279 6.40518 12.705C6.3549 12.5821 6.3296 12.4504 6.33075 12.3176C6.3319 12.1848 6.35949 12.0536 6.4119 11.9316C6.46431 11.8096 6.54049 11.6993 6.636 11.607L10.586 7.65701H1C0.734784 7.65701 0.48043 7.55165 0.292893 7.36412C0.105357 7.17658 0 6.92223 0 6.65701C0 6.39179 0.105357 6.13744 0.292893 5.9499C0.48043 5.76237 0.734784 5.65701 1 5.65701H10.586Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+        </article>
+        <div class="workflow__image-container">
+          <img src="./images/workflow.png" alt="people watching a screen" class="workflow__image-inner" />
+          <img src="./images/magic-workflow.png" alt="magic stars" class="workflow__image-magic">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="join">
+    <div class="container">
+      <div class="join__inner">
+        <div class="join__image-container">
+          <div class="join__article">
+            <h2 class="join__title">
+              Join the community today
+            </h2>
+            <p class="join__description">
+              Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac
+              varius
+              tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.
+            </p>
+            <button type="submit" class="join__signup-button button button-blue">
+              Sign Up Free
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.586 5.65701L6.636 1.70701C6.45384 1.51841 6.35305 1.26581 6.35533 1.00361C6.3576 0.741412 6.46277 0.4906 6.64818 0.305192C6.83359 0.119784 7.0844 0.0146148 7.3466 0.0123364C7.6088 0.010058 7.8614 0.110852 8.05 0.29301L13.707 5.95001C13.8002 6.04266 13.8741 6.15282 13.9246 6.27416C13.9751 6.39549 14.001 6.5256 14.001 6.65701C14.001 6.78842 13.9751 6.91853 13.9246 7.03986C13.8741 7.1612 13.8002 7.27136 13.707 7.36401L8.05 13.021C7.95775 13.1165 7.84741 13.1927 7.7254 13.2451C7.6034 13.2975 7.47218 13.3251 7.3394 13.3263C7.20662 13.3274 7.07494 13.3021 6.95205 13.2518C6.82915 13.2016 6.7175 13.1273 6.62361 13.0334C6.52971 12.9395 6.45546 12.8279 6.40518 12.705C6.3549 12.5821 6.3296 12.4504 6.33075 12.3176C6.3319 12.1848 6.35949 12.0536 6.4119 11.9316C6.46431 11.8096 6.54049 11.6993 6.636 11.607L10.586 7.65701H1C0.734784 7.65701 0.48043 7.55165 0.292893 7.36412C0.105357 7.17658 0 6.92223 0 6.65701C0 6.39179 0.105357 6.13744 0.292893 5.9499C0.48043 5.76237 0.734784 5.65701 1 5.65701H10.586Z"
+                  fill="white" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">
+            <img src="./images/svg/magnifico.svg" alt="Magnifico logo" class="footer__logo-image" />
+          </a>
+          <p class="footer__copyright base">
+            @ 2023. All rights reserved.
+          </p>
+        </div>
+        <div class="footer__column base">
+          <p class="footer__column__text">Terms</p>
+          <p class="footer__column__text">Privacy</p>
+          <p class="footer__column__text">Support</p>
+          <p class="footer__column__text">About</p>
+          <p class="footer__column__text">Resources</p>
+          <p class="footer__column__text">Contact</p>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
 </template>
 
 
@@ -320,7 +430,6 @@ export default {
     flex-direction: column;
     width: 40%;
     gap: 15px;
-
   }
 
   &__title {
@@ -334,12 +443,10 @@ export default {
   }
 
   &__link {
-    display: flex;
-    gap: 16px;
-    align-items: center;
+    @include link-base(var(--color-blue-600), 16px);
   }
 
-    &__image-container {
+  &__image-container {
     position: relative;
     display: inline-block;
   }
@@ -384,10 +491,210 @@ export default {
 
 
   &__link {
-    display: flex;
-    gap: 16px;
-    align-items: center;
+    @include link-base(var(--color-blue-600), 16px);
+
   }
+
+}
+
+.ease {
+  &__inner {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__image-container {
+    position: relative;
+    background: url('./images/ease.png') center center / cover no-repeat;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1280px;
+    height: 496px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 40px;
+    z-index: 1;
+    gap: 24px;
+  }
+
+  &__title {
+    @include font-title(56px, 900, 1.1, var(--color-light));
+  }
+
+  &__description {
+    font-size: 18px;
+    color: var(--color-light);
+    font-weight: 200;
+  }
+
+
+  &__link {
+    @include link-base(var(--color-light), 16px);
+  }
+}
+
+.workflow {
+  &__inner {
+    @include flex-center-around;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 24px;
+  }
+
+  &__title {
+    @include font-title(56px, 900, 1.1, var(--color-blue-gray));
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+  &__link {
+    @include link-base(var(--color-blue-600), 16px);
+  }
+
+  &__image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__image-inner {
+    display: block;
+    z-index: 2;
+    position: relative;
+
+  }
+
+  &__image-magic {
+    position: absolute;
+    top: 20%;
+    right: -10%;
+    z-index: 1;
+  }
+
+  &__table {
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+
+    td {
+      border: 1px solid var(--color-blue-gray-300);
+      padding: 10px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    td:first-child,
+    td:last-child {
+      border-top-left-radius: var(--border-radius);
+      border-bottom-left-radius: var(--border-radius);
+    }
+
+    td:first-child {
+      background-color: var(--color-blue-gray-100);
+    }
+  }
+
+}
+
+.join {
+
+  &__inner {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__image-container {
+    position: relative;
+    background: url('./images/join.png') center center / cover no-repeat;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1280px;
+    height: 382px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    padding: 0 20px;
+    z-index: 1;
+    gap: 24px;
+  }
+
+  &__title {
+    @include font-title(56px, 900, 1.1, var(--color-light));
+    text-align: center;
+  }
+
+  &__description {
+    font-size: 18px;
+    color: var(--color-light);
+    font-weight: 200;
+    text-align: center;
+  }
+
+  &__signup-button {
+    padding: 10px 40px;
+    font-size: 24px;
+    gap: 30px;
+
+    svg {
+      flex-shrink: 0;
+    }
+  }
+}
+
+.footer {
+  &__inner {
+    @include flex-center-between;
+    padding: 0 60px;
+  }
+
+    .container {
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  &__logo-image {
+    height: 20px;
+  }
+
+  &__column {
+    display: flex;
+    gap: 24px;
+  }
+
 
 }
 </style>
