@@ -166,6 +166,7 @@ a {
     margin: 0 auto;
 }
 
+
 .visually-hidden {
     position: absolute !important;
     width: 1px !important;
@@ -199,4 +200,13 @@ a {
     gap: 15px;
     font-size: 16px;
     justify-content: center;
+}
+
+.type{
+    color: var(--color-blue-600);
+    font-size: 16px;
+}
+
+.type svg {
+  fill: currentColor;
 }

@@ -1,0 +1,33 @@
+@mixin flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin font-title($size, $weight: 400, $lineHeight: 1.5, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+
+  @if $color != null {
+    color: $color;
+  }
+}
+
+@mixin inside-image($bottom: 0, $right: 0) {
+  position: absolute;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin inside-image($bottom:0,$right:0){
+  position: absolute;
+  bottom: $bottom;
+  right:$right;
+}

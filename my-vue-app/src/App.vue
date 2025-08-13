@@ -59,7 +59,7 @@
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M10.586 5.65701L6.636 1.70701C6.45384 1.51841 6.35305 1.26581 6.35533 1.00361C6.3576 0.741412 6.46277 0.4906 6.64818 0.305192C6.83359 0.119784 7.0844 0.0146148 7.3466 0.0123364C7.6088 0.010058 7.8614 0.110852 8.05 0.29301L13.707 5.95001C13.8002 6.04266 13.8741 6.15282 13.9246 6.27416C13.9751 6.39549 14.001 6.5256 14.001 6.65701C14.001 6.78842 13.9751 6.91853 13.9246 7.03986C13.8741 7.1612 13.8002 7.27136 13.707 7.36401L8.05 13.021C7.95775 13.1165 7.84741 13.1927 7.7254 13.2451C7.6034 13.2975 7.47218 13.3251 7.3394 13.3263C7.20662 13.3274 7.07494 13.3021 6.95205 13.2518C6.82915 13.2016 6.7175 13.1273 6.62361 13.0334C6.52971 12.9395 6.45546 12.8279 6.40518 12.705C6.3549 12.5821 6.3296 12.4504 6.33075 12.3176C6.3319 12.1848 6.35949 12.0536 6.4119 11.9316C6.46431 11.8096 6.54049 11.6993 6.636 11.607L10.586 7.65701H1C0.734784 7.65701 0.48043 7.55165 0.292893 7.36412C0.105357 7.17658 0 6.92223 0 6.65701C0 6.39179 0.105357 6.13744 0.292893 5.9499C0.48043 5.76237 0.734784 5.65701 1 5.65701H10.586Z"
-                fill="white" />
+                fill="currentColor" />
             </svg>
           </button>
         </div>
@@ -110,22 +110,86 @@
         </article>
 
         <div class="project__image-container">
-          <img src="./images/project-img.png" alt="people watching a screen" class="project__image" />
+          <img src="./images/project-img.png" alt="people watching a screen" class="project__image-inner" />
+          <img src="./images/magic.png" alt="magic stars" class="project__image-magic">
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="enjoy">
+    <div class="container">
+      <div class="enjoy__inner">
+        <div class="enjoy__image-container">
+          <img src="./images/enjoy.png" alt="people watching a screen" class="enjoy__image-inner" />
+          <img src="./images/magic-enjoy.png" alt="magic stars" class="enjoy__image-magic">
+        </div>
+        <article class="enjoy__article">
+          <h2 class="enjoy__title">
+            Enjoy your time working
+          </h2>
+          <p class="enjoy__description">
+            Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis
+            sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.
+          </p>
+          <div class="enjoy__more-info">
+            <a href="#" class="enjoy__link type">
+              See how it helped others
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.586 5.65701L6.636 1.70701C6.45384 1.51841 6.35305 1.26581 6.35533 1.00361C6.3576 0.741412 6.46277 0.4906 6.64818 0.305192C6.83359 0.119784 7.0844 0.0146148 7.3466 0.0123364C7.6088 0.010058 7.8614 0.110852 8.05 0.29301L13.707 5.95001C13.8002 6.04266 13.8741 6.15282 13.9246 6.27416C13.9751 6.39549 14.001 6.5256 14.001 6.65701C14.001 6.78842 13.9751 6.91853 13.9246 7.03986C13.8741 7.1612 13.8002 7.27136 13.707 7.36401L8.05 13.021C7.95775 13.1165 7.84741 13.1927 7.7254 13.2451C7.6034 13.2975 7.47218 13.3251 7.3394 13.3263C7.20662 13.3274 7.07494 13.3021 6.95205 13.2518C6.82915 13.2016 6.7175 13.1273 6.62361 13.0334C6.52971 12.9395 6.45546 12.8279 6.40518 12.705C6.3549 12.5821 6.3296 12.4504 6.33075 12.3176C6.3319 12.1848 6.35949 12.0536 6.4119 11.9316C6.46431 11.8096 6.54049 11.6993 6.636 11.607L10.586 7.65701H1C0.734784 7.65701 0.48043 7.55165 0.292893 7.36412C0.105357 7.17658 0 6.92223 0 6.65701C0 6.39179 0.105357 6.13744 0.292893 5.9499C0.48043 5.76237 0.734784 5.65701 1 5.65701H10.586Z"
+                  fill="currentColor" />
+              </svg>
 
+            </a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
+  <section class="tools">
+    <div class="container">
+      <div class="tools__inner">
+        <article class="tools__article">
+          <h2 class="tools__title">
+            Get all the tools your team needs
+          </h2>
+          <p class="tools__description">
+            Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac
+            varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in
+            accumsan.
+          </p>
+          <a href="#" class="tools__link type">
+            Check the tools
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.586 5.65701L6.636 1.70701C6.45384 1.51841 6.35305 1.26581 6.35533 1.00361C6.3576 0.741412 6.46277 0.4906 6.64818 0.305192C6.83359 0.119784 7.0844 0.0146148 7.3466 0.0123364C7.6088 0.010058 7.8614 0.110852 8.05 0.29301L13.707 5.95001C13.8002 6.04266 13.8741 6.15282 13.9246 6.27416C13.9751 6.39549 14.001 6.5256 14.001 6.65701C14.001 6.78842 13.9751 6.91853 13.9246 7.03986C13.8741 7.1612 13.8002 7.27136 13.707 7.36401L8.05 13.021C7.95775 13.1165 7.84741 13.1927 7.7254 13.2451C7.6034 13.2975 7.47218 13.3251 7.3394 13.3263C7.20662 13.3274 7.07494 13.3021 6.95205 13.2518C6.82915 13.2016 6.7175 13.1273 6.62361 13.0334C6.52971 12.9395 6.45546 12.8279 6.40518 12.705C6.3549 12.5821 6.3296 12.4504 6.33075 12.3176C6.3319 12.1848 6.35949 12.0536 6.4119 11.9316C6.46431 11.8096 6.54049 11.6993 6.636 11.607L10.586 7.65701H1C0.734784 7.65701 0.48043 7.55165 0.292893 7.36412C0.105357 7.17658 0 6.92223 0 6.65701C0 6.39179 0.105357 6.13744 0.292893 5.9499C0.48043 5.76237 0.734784 5.65701 1 5.65701H10.586Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+        </article>
+        <div class="tools__img">
+          <img src="./images/tools.png" alt="google tools" class="tools__image">
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
+
+
+<script>
+export default {
+  name: 'FlexCenterBetween'
+}
+</script>
+
 <style scoped lang="scss">
+@use "./assets/styles/mixins" as *;
+
 .header {
   &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    @include flex-center-between;
   }
 
   &__nav {
@@ -170,10 +234,7 @@
   border-bottom: 1px solid var(--color-blue-gray-300);
 
   &__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 50px;
+    @include flex-center-around;
 
   }
 
@@ -182,14 +243,10 @@
     flex-direction: column;
     width: 40%;
     gap: 15px;
-
   }
 
   &__title {
-    font-size: 72px;
-    font-weight: 900;
-    line-height: 1.1;
-    color: var(--color-blue-gray);
+    @include font-title(72px, 900, 1.1, var(--color-blue-gray));
   }
 
   &__description {
@@ -199,27 +256,27 @@
   }
 
   &__input-wrapper {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--color-blue-gray);
-  border-radius: var(--border-radius);
-  padding: 0 12px;
-  height: var(--input-height);
-  max-width: 400px;
-  background-color: transparent;
-}
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-blue-gray);
+    border-radius: var(--border-radius);
+    padding: 0 12px;
+    height: var(--input-height);
+    max-width: 400px;
+    background-color: transparent;
+  }
 
- &__input-wrapper svg {
-  flex-shrink: 0;
-}
+  &__input-wrapper svg {
+    flex-shrink: 0;
+  }
 
- &__form-input {
-  color: var(--color-blue-gray-600);
-  background-color: transparent;
-  height: 100%;
-  max-width: 400px;
-}
+  &__form-input {
+    color: var(--color-blue-gray-600);
+    background-color: transparent;
+    height: 100%;
+    max-width: 400px;
+  }
 
   &__form {
     display: flex;
@@ -234,6 +291,103 @@
     border-radius: var(--border-radius);
   }
 
+  &__image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__image-inner {
+    display: block;
+    z-index: 2;
+    position: relative;
+
+  }
+
+  &__image-magic {
+    @include inside-image(-55px, -55px);
+    z-index: 1;
+  }
+
+}
+
+.enjoy {
+  &__inner {
+    @include flex-center-around;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 15px;
+
+  }
+
+  &__title {
+    @include font-title(56px, 900, 1.1, var(--color-blue-gray));
+  }
+
+  &__description {
+    font-size: 18px;
+    color: var(--color-blue-gray-600);
+    font-weight: 200;
+  }
+
+  &__link {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+    &__image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__image-inner {
+    display: block;
+    z-index: 2;
+    position: relative;
+
+  }
+
+  &__image-magic {
+    position: absolute;
+    top: 35%;
+    left: -10%;
+    z-index: 1;
+  }
+}
+
+.tools {
+  &__inner {
+    @include flex-center-around;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    gap: 15px;
+
+  }
+
+  &__title {
+    @include font-title(56px, 900, 1.1, var(--color-blue-gray));
+  }
+
+  &__description {
+    font-size: 18px;
+    color: var(--color-blue-gray-600);
+    font-weight: 200;
+  }
+
+
+  &__link {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
 
 }
 </style>
