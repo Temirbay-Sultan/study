@@ -11,7 +11,7 @@
     margin: 0;
     outline: none;
     cursor: pointer;
-    padding: 8px 12px;
+    padding: 9px 12px;
     font-weight: 500;
     transition: all 0.3s ease;
     background-color: var(--color-blue-600);

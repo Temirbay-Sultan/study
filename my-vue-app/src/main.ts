@@ -6,6 +6,7 @@ import "@fontsource/roboto/300.css";
 import './assets/styles/_mixins.scss'
 
 
+const app = createApp(App);
 
 
-createApp(App).mount('#app')
+app.mount('#app');

@@ -63,23 +63,14 @@
                 fill="currentColor" />
             </svg>
           </UiButton>
-          <!-- <button type="button" class="header__signup-button button button-blue">Sign Up Free
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.586 5.65701L6.636 1.70701C6.45384 1.51841 6.35305 1.26581 6.35533 1.00361C6.3576 0.741412 6.46277 0.4906 6.64818 0.305192C6.83359 0.119784 7.0844 0.0146148 7.3466 0.0123364C7.6088 0.010058 7.8614 0.110852 8.05 0.29301L13.707 5.95001C13.8002 6.04266 13.8741 6.15282 13.9246 6.27416C13.9751 6.39549 14.001 6.5256 14.001 6.65701C14.001 6.78842 13.9751 6.91853 13.9246 7.03986C13.8741 7.1612 13.8002 7.27136 13.707 7.36401L8.05 13.021C7.95775 13.1165 7.84741 13.1927 7.7254 13.2451C7.6034 13.2975 7.47218 13.3251 7.3394 13.3263C7.20662 13.3274 7.07494 13.3021 6.95205 13.2518C6.82915 13.2016 6.7175 13.1273 6.62361 13.0334C6.52971 12.9395 6.45546 12.8279 6.40518 12.705C6.3549 12.5821 6.3296 12.4504 6.33075 12.3176C6.3319 12.1848 6.35949 12.0536 6.4119 11.9316C6.46431 11.8096 6.54049 11.6993 6.636 11.607L10.586 7.65701H1C0.734784 7.65701 0.48043 7.55165 0.292893 7.36412C0.105357 7.17658 0 6.92223 0 6.65701C0 6.39179 0.105357 6.13744 0.292893 5.9499C0.48043 5.76237 0.734784 5.65701 1 5.65701H10.586Z"
-                fill="currentColor" />
-            </svg>
-          </button> -->
         </div>
       </div>
     </div>
   </header>
-  <!-- add main -->
-  <section class="project">
-    <div class="container">
+  <main>
+    <section class="project">
       <div class="project__inner">
-        <!-- change article to div -->
-        <article class="project__article">
+        <div class="project__article">
           <h2 class="project__title">
             Team projects, done well
           </h2>
@@ -100,14 +91,14 @@
               </svg>
               <input class="project__form-input input" id="email" placeholder="Enter work email" type="email" />
             </div>
-            <button type="submit" class="project__signup-button button button-blue">
+            <UiButton>
               Sign Up Free
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M10.586 5.65701L6.636 1.70701C6.45384 1.51841 6.35305 1.26581 6.35533 1.00361C6.3576 0.741412 6.46277 0.4906 6.64818 0.305192C6.83359 0.119784 7.0844 0.0146148 7.3466 0.0123364C7.6088 0.010058 7.8614 0.110852 8.05 0.29301L13.707 5.95001C13.8002 6.04266 13.8741 6.15282 13.9246 6.27416C13.9751 6.39549 14.001 6.5256 14.001 6.65701C14.001 6.78842 13.9751 6.91853 13.9246 7.03986C13.8741 7.1612 13.8002 7.27136 13.707 7.36401L8.05 13.021C7.95775 13.1165 7.84741 13.1927 7.7254 13.2451C7.6034 13.2975 7.47218 13.3251 7.3394 13.3263C7.20662 13.3274 7.07494 13.3021 6.95205 13.2518C6.82915 13.2016 6.7175 13.1273 6.62361 13.0334C6.52971 12.9395 6.45546 12.8279 6.40518 12.705C6.3549 12.5821 6.3296 12.4504 6.33075 12.3176C6.3319 12.1848 6.35949 12.0536 6.4119 11.9316C6.46431 11.8096 6.54049 11.6993 6.636 11.607L10.586 7.65701H1C0.734784 7.65701 0.48043 7.55165 0.292893 7.36412C0.105357 7.17658 0 6.92223 0 6.65701C0 6.39179 0.105357 6.13744 0.292893 5.9499C0.48043 5.76237 0.734784 5.65701 1 5.65701H10.586Z"
-                  fill="white" />
+                  fill="currentColor" />
               </svg>
-            </button>
+            </UiButton>
           </form>
 
           <div class="project__logos">
@@ -116,30 +107,29 @@
             <img src="./images/project-logo/3.png" alt="project logo" class="project__logo">
             <img src="./images/project-logo/4.png" alt="project logo" class="project__logo">
           </div>
-        </article>
+        </div>
 
-        <!-- project__image -->
         <div class="project__image-container">
           <img src="./images/project-img.png" alt="people watching a screen" class="project__image-inner" />
           <img src="./images/magic.png" alt="magic stars" class="project__image-magic">
         </div>
       </div>
-    </div>
-  </section>
-  
-  <section class="enjoy">
-    <div class="container">
+    </section>
+
+    <section class="enjoy">
+
       <div class="enjoy__inner">
         <div class="enjoy__image-container">
           <img src="./images/enjoy.png" alt="people watching a screen" class="enjoy__image-inner" />
           <img src="./images/magic-enjoy.png" alt="magic stars" class="enjoy__image-magic">
         </div>
-        <article class="enjoy__article">
+        <div class="enjoy__article">
           <h2 class="enjoy__title">
             Enjoy your time working
           </h2>
           <p class="enjoy__description">
-            Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis
+            Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque
+            lobortis
             sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.
           </p>
           <div class="enjoy__more-info">
@@ -153,16 +143,13 @@
 
             </a>
           </div>
-        </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="tools">
-    <div class="container">
+    <section class="tools">
       <div class="tools__inner">
-        <!-- change to div -->
-        <article class="tools__article">
+        <div class="tools__article">
           <h2 class="tools__title">
             Get all the tools your team needs
           </h2>
@@ -179,20 +166,17 @@
                 fill="currentColor" />
             </svg>
           </a>
-        </article>
+        </div>
         <div class="tools__img">
           <img src="./images/tools.png" alt="google tools" class="tools__image">
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="ease">
-    <div class="container">
+    <section class="ease">
       <div class="ease__inner">
         <div class="ease__image-container">
-            <!-- change to div -->
-          <article class="ease__article">
+          <div class="ease__article">
             <h2 class="ease__title">Problems come and get solved with ease</h2>
             <p class="ease__description">Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque
               pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada
@@ -206,52 +190,42 @@
                   fill="currentColor" />
               </svg>
             </a>
-          </article>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="workflow">
-    <div class="container">
-      <div class="workflow__inner">
-        <!-- change to div -->
-        <article class="workflow__article">
-          <h2 class="workflow__title">
-            Improve workflow
-          </h2>
-          <!-- change to buttons tab -->
-          <table class="workflow__table">
-            <tr>
-              <td>Research</td>
-              <td>Plan</td>
-              <td>Design</td>
-            </tr>
-          </table>
+    <section class="workflow">
+      <div class="container">
+        <div class="workflow__inner">
+          <div class="workflow__article">
+            <h2 class="workflow__title">
+              Improve workflow
+            </h2>
+            <ButtonGroup :buttons="['Research', 'Plan', 'Design']" @click="onClick" />
 
-          <p class="workflow__description">Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque
-            pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada
-            placerat arcu at enim elit in accumsan.</p>
+            <p class="workflow__description">Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque
+              pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada
+              placerat arcu at enim elit in accumsan.</p>
 
-          <a href="#" class="workflow__link type">
-            Check the tools
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.586 5.65701L6.636 1.70701C6.45384 1.51841 6.35305 1.26581 6.35533 1.00361C6.3576 0.741412 6.46277 0.4906 6.64818 0.305192C6.83359 0.119784 7.0844 0.0146148 7.3466 0.0123364C7.6088 0.010058 7.8614 0.110852 8.05 0.29301L13.707 5.95001C13.8002 6.04266 13.8741 6.15282 13.9246 6.27416C13.9751 6.39549 14.001 6.5256 14.001 6.65701C14.001 6.78842 13.9751 6.91853 13.9246 7.03986C13.8741 7.1612 13.8002 7.27136 13.707 7.36401L8.05 13.021C7.95775 13.1165 7.84741 13.1927 7.7254 13.2451C7.6034 13.2975 7.47218 13.3251 7.3394 13.3263C7.20662 13.3274 7.07494 13.3021 6.95205 13.2518C6.82915 13.2016 6.7175 13.1273 6.62361 13.0334C6.52971 12.9395 6.45546 12.8279 6.40518 12.705C6.3549 12.5821 6.3296 12.4504 6.33075 12.3176C6.3319 12.1848 6.35949 12.0536 6.4119 11.9316C6.46431 11.8096 6.54049 11.6993 6.636 11.607L10.586 7.65701H1C0.734784 7.65701 0.48043 7.55165 0.292893 7.36412C0.105357 7.17658 0 6.92223 0 6.65701C0 6.39179 0.105357 6.13744 0.292893 5.9499C0.48043 5.76237 0.734784 5.65701 1 5.65701H10.586Z"
-                fill="currentColor" />
-            </svg>
-          </a>
-        </article>
-        <div class="workflow__image-container">
-          <img src="./images/workflow.png" alt="people watching a screen" class="workflow__image-inner" />
-          <img src="./images/magic-workflow.png" alt="magic stars" class="workflow__image-magic">
+            <a href="#" class="workflow__link type">
+              Check the tools
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.586 5.65701L6.636 1.70701C6.45384 1.51841 6.35305 1.26581 6.35533 1.00361C6.3576 0.741412 6.46277 0.4906 6.64818 0.305192C6.83359 0.119784 7.0844 0.0146148 7.3466 0.0123364C7.6088 0.010058 7.8614 0.110852 8.05 0.29301L13.707 5.95001C13.8002 6.04266 13.8741 6.15282 13.9246 6.27416C13.9751 6.39549 14.001 6.5256 14.001 6.65701C14.001 6.78842 13.9751 6.91853 13.9246 7.03986C13.8741 7.1612 13.8002 7.27136 13.707 7.36401L8.05 13.021C7.95775 13.1165 7.84741 13.1927 7.7254 13.2451C7.6034 13.2975 7.47218 13.3251 7.3394 13.3263C7.20662 13.3274 7.07494 13.3021 6.95205 13.2518C6.82915 13.2016 6.7175 13.1273 6.62361 13.0334C6.52971 12.9395 6.45546 12.8279 6.40518 12.705C6.3549 12.5821 6.3296 12.4504 6.33075 12.3176C6.3319 12.1848 6.35949 12.0536 6.4119 11.9316C6.46431 11.8096 6.54049 11.6993 6.636 11.607L10.586 7.65701H1C0.734784 7.65701 0.48043 7.55165 0.292893 7.36412C0.105357 7.17658 0 6.92223 0 6.65701C0 6.39179 0.105357 6.13744 0.292893 5.9499C0.48043 5.76237 0.734784 5.65701 1 5.65701H10.586Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+          <div class="workflow__image-container">
+            <img src="./images/workflow.png" alt="people watching a screen" class="workflow__image-inner" />
+            <img src="./images/magic-workflow.png" alt="magic stars" class="workflow__image-magic">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="join">
-    <div class="container">
+    <section class="join">
       <div class="join__inner">
         <div class="join__image-container">
           <div class="join__article">
@@ -263,50 +237,39 @@
               varius
               tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.
             </p>
-            <button type="submit" class="join__signup-button button button-blue">
+            <UiButton class="join__my-big-btn">
               Sign Up Free
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M10.586 5.65701L6.636 1.70701C6.45384 1.51841 6.35305 1.26581 6.35533 1.00361C6.3576 0.741412 6.46277 0.4906 6.64818 0.305192C6.83359 0.119784 7.0844 0.0146148 7.3466 0.0123364C7.6088 0.010058 7.8614 0.110852 8.05 0.29301L13.707 5.95001C13.8002 6.04266 13.8741 6.15282 13.9246 6.27416C13.9751 6.39549 14.001 6.5256 14.001 6.65701C14.001 6.78842 13.9751 6.91853 13.9246 7.03986C13.8741 7.1612 13.8002 7.27136 13.707 7.36401L8.05 13.021C7.95775 13.1165 7.84741 13.1927 7.7254 13.2451C7.6034 13.2975 7.47218 13.3251 7.3394 13.3263C7.20662 13.3274 7.07494 13.3021 6.95205 13.2518C6.82915 13.2016 6.7175 13.1273 6.62361 13.0334C6.52971 12.9395 6.45546 12.8279 6.40518 12.705C6.3549 12.5821 6.3296 12.4504 6.33075 12.3176C6.3319 12.1848 6.35949 12.0536 6.4119 11.9316C6.46431 11.8096 6.54049 11.6993 6.636 11.607L10.586 7.65701H1C0.734784 7.65701 0.48043 7.55165 0.292893 7.36412C0.105357 7.17658 0 6.92223 0 6.65701C0 6.39179 0.105357 6.13744 0.292893 5.9499C0.48043 5.76237 0.734784 5.65701 1 5.65701H10.586Z"
-                  fill="white" />
+                  fill="currentColor" />
               </svg>
-            </button>
+            </UiButton>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  </main>
   <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <a href="#" class="footer__logo">
-            <img src="./images/svg/magnifico.svg" alt="Magnifico logo" class="footer__logo-image" />
-          </a>
-          <p class="footer__copyright base">
-            @ 2023. All rights reserved.
-          </p>
-        </div>
-        <div class="footer__column base">
-          <p class="footer__column__text">Terms</p>
-          <p class="footer__column__text">Privacy</p>
-          <p class="footer__column__text">Support</p>
-          <p class="footer__column__text">About</p>
-          <p class="footer__column__text">Resources</p>
-          <p class="footer__column__text">Contact</p>
-        </div>
-
-
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="footer__logo">
+          <img src="./images/svg/magnifico.svg" alt="Magnifico logo" class="footer__logo-image" />
+        </a>
+        <p class="footer__copyright base">
+          @ 2023. All rights reserved.
+        </p>
       </div>
+      <FooterColumn :items="['Terms', 'Privacy', 'Support', 'About', 'Resources', 'Contact']" @click="onClick" />
+
     </div>
   </footer>
 </template>
 
-
-
 <script setup>
 import UiButton from './components/UiButton.vue';
+import ButtonGroup from './components/ButtonGroup.vue';
+import FooterColumn from './components/FooterColumn.vue';
 </script>
 
 <style scoped lang="scss">
@@ -336,13 +299,18 @@ import UiButton from './components/UiButton.vue';
 
   &__auth {
     display: flex;
-    gap: 24px;
     align-items: center;
+    gap: 14px;
   }
 
-
   &__login {
+    border-radius: var(--border-radius);
     color: var(--color-blue-600);
+    padding: 10px;
+  }
+
+  &__login:hover {
+    background-color: var(--color-blue-gray-300);
   }
 
   &__signup-button {
@@ -355,19 +323,22 @@ import UiButton from './components/UiButton.vue';
 }
 
 .project {
+  @include container;
   border-top: 1px solid var(--color-blue-gray-300);
   border-bottom: 1px solid var(--color-blue-gray-300);
 
   &__inner {
-    @include flex-center-around;
+    display: flex;
+    align-items: center;
+    gap: 80px;
 
   }
 
   &__article {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    gap: 15px;
+    flex: 1;
+    gap: 24px;
   }
 
   &__title {
@@ -410,8 +381,7 @@ import UiButton from './components/UiButton.vue';
 
   &__logos {
     display: flex;
-    // change color
-    background-color: var(--color-blue-gray-300);
+    background-color: var(--color-blue-gray-100);
     gap: 20px;
     padding: 16px;
     border-radius: var(--border-radius);
@@ -437,8 +407,10 @@ import UiButton from './components/UiButton.vue';
 }
 
 .enjoy {
+  @include container;
+
   &__inner {
-    @include flex-center-around;
+    @include flex-center-between;
   }
 
   &__article {
@@ -483,8 +455,10 @@ import UiButton from './components/UiButton.vue';
 }
 
 .tools {
+  @include container;
+
   &__inner {
-    @include flex-center-around;
+    @include flex-center-between;
   }
 
   &__article {
@@ -514,6 +488,8 @@ import UiButton from './components/UiButton.vue';
 }
 
 .ease {
+  @include container;
+
   &__inner {
     border-radius: 20px;
     overflow: hidden;
@@ -525,7 +501,6 @@ import UiButton from './components/UiButton.vue';
     background: url('./images/ease.png') center center / cover no-repeat;
     border-radius: 20px;
     width: 100%;
-    max-width: 1280px;
     height: 496px;
     display: flex;
     justify-content: flex-end;
@@ -559,15 +534,18 @@ import UiButton from './components/UiButton.vue';
 }
 
 .workflow {
+  @include container;
+
   &__inner {
-    @include flex-center-around;
+    @include flex-center-between;
+    gap: 80px;
   }
 
   &__article {
     display: flex;
     flex-direction: column;
-    width: 40%;
     gap: 24px;
+    flex: 1;
   }
 
   &__title {
@@ -584,6 +562,7 @@ import UiButton from './components/UiButton.vue';
   }
 
   &__image-container {
+    flex: 1;
     position: relative;
     display: inline-block;
   }
@@ -602,34 +581,13 @@ import UiButton from './components/UiButton.vue';
     z-index: 1;
   }
 
-  &__table {
-    text-align: center;
-    border-collapse: separate;
-    border-spacing: 0;
-    border-radius: var(--border-radius);
-    overflow: hidden;
 
-    td {
-      border: 1px solid var(--color-blue-gray-300);
-      padding: 10px;
-      font-weight: 500;
-      font-size: 16px;
-    }
-
-    td:first-child,
-    td:last-child {
-      border-top-left-radius: var(--border-radius);
-      border-bottom-left-radius: var(--border-radius);
-    }
-
-    td:first-child {
-      background-color: var(--color-blue-gray-100);
-    }
-  }
 
 }
 
 .join {
+  @include container;
+
 
   &__inner {
     border-radius: 20px;
@@ -641,8 +599,6 @@ import UiButton from './components/UiButton.vue';
     position: relative;
     background: url('./images/join.png') center center / cover no-repeat;
     border-radius: 20px;
-    width: 100%;
-    max-width: 1280px;
     height: 382px;
     display: flex;
     justify-content: center;
@@ -672,7 +628,7 @@ import UiButton from './components/UiButton.vue';
     text-align: center;
   }
 
-  &__signup-button {
+  &__my-big-btn {
     padding: 10px 40px;
     font-size: 24px;
     gap: 30px;
@@ -684,16 +640,12 @@ import UiButton from './components/UiButton.vue';
 }
 
 .footer {
+
+  @include container(10px 80px 92px);
+
   &__inner {
     @include flex-center-between;
-    padding: 0 60px;
   }
-
-    .container {
-    padding-top: 20px;
-    padding-bottom: 80px;
-  }
-
 
   &__brand {
     display: flex;
@@ -705,12 +657,6 @@ import UiButton from './components/UiButton.vue';
   &__logo-image {
     height: 20px;
   }
-
-  &__column {
-    display: flex;
-    gap: 24px;
-  }
-
 
 }
 </style>

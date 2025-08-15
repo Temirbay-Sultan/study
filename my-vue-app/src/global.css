@@ -155,20 +155,11 @@ a {
     text-decoration: none;
 }
 
-/* container do with mixin */
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    /* to paddnig 0 80px */
-    padding: 80px 20px;
-}
-
 .container-xl {
     max-width: 1520px;
     padding: 30px 24px;
     margin: 0 auto;
 }
-
 
 .visually-hidden {
     position: absolute !important;
@@ -181,28 +172,6 @@ a {
     clip-path: inset(100%) !important;
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
-}
-
-.button {
-    border: none;
-    width: fit-content;
-    margin: 0;
-    outline: none;
-    cursor: pointer;
-    padding: 8px 12px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    background-color: var(--color-blue-600);
-    color: var(--color-light);
-}
-
-.button-blue {
-    display: inline-flex;
-    border-radius: var(--border-radius);
-    align-items: center;
-    gap: 15px;
-    font-size: 16px;
-    justify-content: center;
 }
 
 .type {
