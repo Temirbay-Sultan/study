@@ -5,57 +5,10 @@
         <a href="#" class="header__logo">
           <img src="./images/svg/magnifico.svg" alt="Magnifico logo" class="header__logo-image" />
         </a>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Products
-                <svg class="header__menu-icon" width="15" height="8" viewBox="0 0 15 8" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.57114 5.314L12.5211 0.364004C12.6134 0.268494 12.7237 0.192312 12.8457 0.139903C12.9677 0.0874936 13.099 0.0599074 13.2317 0.0587536C13.3645 0.0575998 13.4962 0.0829015 13.6191 0.133182C13.742 0.183463 13.8536 0.257716 13.9475 0.351609C14.0414 0.445502 14.1157 0.557154 14.166 0.68005C14.2162 0.802946 14.2415 0.934626 14.2404 1.06741C14.2392 1.20018 14.2117 1.3314 14.1592 1.45341C14.1068 1.57541 14.0307 1.68576 13.9351 1.778L8.27814 7.435C8.09062 7.62247 7.83631 7.72779 7.57114 7.72779C7.30598 7.72779 7.05167 7.62247 6.86414 7.435L1.20714 1.778C1.11163 1.68576 1.03545 1.57541 0.983042 1.45341C0.930633 1.3314 0.903047 1.20018 0.901893 1.06741C0.900739 0.934626 0.926041 0.802946 0.976322 0.68005C1.0266 0.557154 1.10086 0.445502 1.19475 0.351609C1.28864 0.257716 1.40029 0.183463 1.52319 0.133182C1.64609 0.0829015 1.77777 0.0575998 1.91054 0.0587536C2.04332 0.0599074 2.17454 0.0874936 2.29655 0.139903C2.41855 0.192312 2.5289 0.268494 2.62114 0.364004L7.57114 5.314Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Solutions
-                <svg class="header__menu-icon" width="15" height="8" viewBox="0 0 15 8" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.57114 5.314L12.5211 0.364004C12.6134 0.268494 12.7237 0.192312 12.8457 0.139903C12.9677 0.0874936 13.099 0.0599074 13.2317 0.0587536C13.3645 0.0575998 13.4962 0.0829015 13.6191 0.133182C13.742 0.183463 13.8536 0.257716 13.9475 0.351609C14.0414 0.445502 14.1157 0.557154 14.166 0.68005C14.2162 0.802946 14.2415 0.934626 14.2404 1.06741C14.2392 1.20018 14.2117 1.3314 14.1592 1.45341C14.1068 1.57541 14.0307 1.68576 13.9351 1.778L8.27814 7.435C8.09062 7.62247 7.83631 7.72779 7.57114 7.72779C7.30598 7.72779 7.05167 7.62247 6.86414 7.435L1.20714 1.778C1.11163 1.68576 1.03545 1.57541 0.983042 1.45341C0.930633 1.3314 0.903047 1.20018 0.901893 1.06741C0.900739 0.934626 0.926041 0.802946 0.976322 0.68005C1.0266 0.557154 1.10086 0.445502 1.19475 0.351609C1.28864 0.257716 1.40029 0.183463 1.52319 0.133182C1.64609 0.0829015 1.77777 0.0575998 1.91054 0.0587536C2.04332 0.0599074 2.17454 0.0874936 2.29655 0.139903C2.41855 0.192312 2.5289 0.268494 2.62114 0.364004L7.57114 5.314Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Services
-                <svg class="header__menu-icon" width="15" height="8" viewBox="0 0 15 8" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.57114 5.314L12.5211 0.364004C12.6134 0.268494 12.7237 0.192312 12.8457 0.139903C12.9677 0.0874936 13.099 0.0599074 13.2317 0.0587536C13.3645 0.0575998 13.4962 0.0829015 13.6191 0.133182C13.742 0.183463 13.8536 0.257716 13.9475 0.351609C14.0414 0.445502 14.1157 0.557154 14.166 0.68005C14.2162 0.802946 14.2415 0.934626 14.2404 1.06741C14.2392 1.20018 14.2117 1.3314 14.1592 1.45341C14.1068 1.57541 14.0307 1.68576 13.9351 1.778L8.27814 7.435C8.09062 7.62247 7.83631 7.72779 7.57114 7.72779C7.30598 7.72779 7.05167 7.62247 6.86414 7.435L1.20714 1.778C1.11163 1.68576 1.03545 1.57541 0.983042 1.45341C0.930633 1.3314 0.903047 1.20018 0.901893 1.06741C0.900739 0.934626 0.926041 0.802946 0.976322 0.68005C1.0266 0.557154 1.10086 0.445502 1.19475 0.351609C1.28864 0.257716 1.40029 0.183463 1.52319 0.133182C1.64609 0.0829015 1.77777 0.0575998 1.91054 0.0587536C2.04332 0.0599074 2.17454 0.0874936 2.29655 0.139903C2.41855 0.192312 2.5289 0.268494 2.62114 0.364004L7.57114 5.314Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Help Center
-                <svg class="header__menu-icon" width="15" height="8" viewBox="0 0 15 8" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.57114 5.314L12.5211 0.364004C12.6134 0.268494 12.7237 0.192312 12.8457 0.139903C12.9677 0.0874936 13.099 0.0599074 13.2317 0.0587536C13.3645 0.0575998 13.4962 0.0829015 13.6191 0.133182C13.742 0.183463 13.8536 0.257716 13.9475 0.351609C14.0414 0.445502 14.1157 0.557154 14.166 0.68005C14.2162 0.802946 14.2415 0.934626 14.2404 1.06741C14.2392 1.20018 14.2117 1.3314 14.1592 1.45341C14.1068 1.57541 14.0307 1.68576 13.9351 1.778L8.27814 7.435C8.09062 7.62247 7.83631 7.72779 7.57114 7.72779C7.30598 7.72779 7.05167 7.62247 6.86414 7.435L1.20714 1.778C1.11163 1.68576 1.03545 1.57541 0.983042 1.45341C0.930633 1.3314 0.903047 1.20018 0.901893 1.06741C0.900739 0.934626 0.926041 0.802946 0.976322 0.68005C1.0266 0.557154 1.10086 0.445502 1.19475 0.351609C1.28864 0.257716 1.40029 0.183463 1.52319 0.133182C1.64609 0.0829015 1.77777 0.0575998 1.91054 0.0587536C2.04332 0.0599074 2.17454 0.0874936 2.29655 0.139903C2.41855 0.192312 2.5289 0.268494 2.62114 0.364004L7.57114 5.314Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Pricing
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__auth">
+        <HeaderNav class="header__nav" />
+        <div class="header__desktop">
           <a href="#" class="header__login">Log In</a>
-          <UiButton>
+          <UiButton class="header__signup-btn">
             Sign Up Free
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -64,6 +17,19 @@
             </svg>
           </UiButton>
         </div>
+        <div class="header__arrow-mobile">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M3 8C3 7.58579 3.33579 7.25 3.75 7.25H20.25C20.6642 7.25 21 7.58579 21 8C21 8.41421 20.6642 8.75 20.25 8.75H3.75C3.33579 8.75 3 8.41421 3 8Z"
+              fill="#0F172A" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M3 12.5C3 12.0858 3.33579 11.75 3.75 11.75H20.25C20.6642 11.75 21 12.0858 21 12.5C21 12.9142 20.6642 13.25 20.25 13.25H3.75C3.33579 13.25 3 12.9142 3 12.5Z"
+              fill="#0F172A" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M3 17C3 16.5858 3.33579 16.25 3.75 16.25H20.25C20.6642 16.25 21 16.5858 21 17C21 17.4142 20.6642 17.75 20.25 17.75H3.75C3.33579 17.75 3 17.4142 3 17Z"
+              fill="#0F172A" />
+          </svg>
+        </div>
       </div>
     </div>
   </header>
@@ -71,13 +37,12 @@
     <section class="project">
       <div class="project__inner">
         <div class="project__article">
-          <h2 class="project__title">
-            Team projects, done well
-          </h2>
+          <ResponsiveText tag="h2" class="project__title" desktopText="Team projects, done well"
+            mobileText="Teach students worldwide" />
 
-          <p class="project__description">
-            The only platform that gives your team all the tools needed to work together on their awesome projects.
-          </p>
+          <ResponsiveText tag="p" class="project__description" desktopText="The only platform that gives your team all the tools needed to
+             work together on their awesome projects." mobileText="Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin
+             massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies." />
 
           <form class="project__form">
             <label class="visually-hidden" for="email">
@@ -150,14 +115,15 @@
     <section class="tools">
       <div class="tools__inner">
         <div class="tools__article">
-          <h2 class="tools__title">
-            Get all the tools your team needs
-          </h2>
-          <p class="tools__description">
-            Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac
-            varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in
-            accumsan.
-          </p>
+
+          <ResponsiveText tag="h2" class="tools__title" desktopText="Get all the tools your team needs"
+            mobileText="Enjoy your time working" />
+
+          <ResponsiveText tag="p" class="tools__description" desktopText="Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
+             Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis 
+             ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan." mobileText="Etiam condimentum duis molestie malesuada volutpat pellentesque sed. 
+            Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus 
+            imperdiet aenean nulla id." />
           <a href="#" class="tools__link type">
             Check the tools
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -270,6 +236,9 @@
 import UiButton from './components/UiButton.vue';
 import ButtonGroup from './components/ButtonGroup.vue';
 import FooterColumn from './components/FooterColumn.vue';
+import HeaderNav from './components/HeaderNav.vue';
+import ResponsiveText from "./components/ResponsiveText.vue"
+
 </script>
 
 <style scoped lang="scss">
@@ -297,7 +266,7 @@ import FooterColumn from './components/FooterColumn.vue';
     font-size: 16px;
   }
 
-  &__auth {
+  &__desktop {
     display: flex;
     align-items: center;
     gap: 14px;
@@ -319,6 +288,10 @@ import FooterColumn from './components/FooterColumn.vue';
     svg {
       flex-shrink: 0;
     }
+  }
+
+  &__arrow-mobile {
+    display: none;
   }
 }
 
@@ -649,14 +622,234 @@ import FooterColumn from './components/FooterColumn.vue';
 
   &__brand {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 8px;
   }
 
   &__logo-image {
+    min-width: 80px;
     height: 20px;
   }
 
+}
+
+@media (max-width: 767px) {
+  .header {
+    .container-xl {
+      padding: 16px;
+      justify-content: center;
+      width: 100%;
+    }
+
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+
+
+    &__nav {
+      display: none;
+    }
+
+    &__desktop {
+      display: none;
+    }
+
+    &__arrow-mobile {
+      display: flex;
+    }
+
+  }
+
+  .project {
+    @include container(48px 16px);
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    &__description {
+      font-size: 16px;
+      color: var(--color-blue-gray-900);
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__logos {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 30px;
+      justify-items: center;
+    }
+
+    &__image-magic {
+      display: none;
+    }
+
+  }
+
+  .enjoy {
+    @include container(48px 16px);
+
+    &__inner {
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__description {
+      font-size: 16px;
+      color: var(--color-blue-gray-900);
+    }
+
+    &__image-container {
+      order: 2;
+    }
+
+    &__article {
+      order: 1;
+      width: 100%;
+    }
+  }
+
+  .tools {
+    @include container(48px 16px);
+
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &__img {
+      width: 360px;
+      padding-left: 40px;
+    }
+
+    &__image {
+      display: block;
+      margin: 0 auto;
+      transform: scale(1.3);
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__article {
+      width: 100%;
+    }
+
+    &__link {
+      display: none;
+    }
+
+    &__description {
+      font-size: 16px;
+      color: var(--color-blue-gray-900);
+    }
+  }
+
+  .ease {
+    @include container(0);
+
+    &__inner {
+      border-radius: 0;
+      gap: 24px;
+    }
+
+    &__image-container {
+      height: 434px;
+      border-radius: 0;
+    }
+
+    &__article {
+      max-width: 100%;
+      padding: 0 24px;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+  }
+
+  .workflow {
+    @include container(48px 16px);
+
+    &__inner {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__image-magic {
+      display: none;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+  }
+
+  .join {
+    @include container(0);
+
+    &__inner {
+      border-radius: 0;
+      gap: 24px;
+    }
+
+    &__image-container {
+      height: 434px;
+      border-radius: 0;
+    }
+
+    &__article {
+      max-width: 100%;
+      padding: 0 24px;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+  }
+
+  .footer {
+    @include container(24px 16px);
+
+    &__inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    &__brand {
+      flex-direction: column;
+    }
+
+    &__column {
+      gap: 8px;
+    }
+  }
 }
 </style>

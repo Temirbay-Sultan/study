@@ -142,13 +142,13 @@ body {
     --color-light: #FFFFFF;
     --color-blue-gray: #0F172A;
     --color-blue-600: #2563EB;
+    --color-blue-gray-900: #0F172A;
     --color-blue-gray-600: #475569;
     --color-blue-gray-300: #CBD5E1;
     --color-blue-gray-100: #F1F5F9;
     --input-height: 40px;
     --border-radius: 8px;
     --border: 1px solid var(--color-light);
-
 }
 
 a {
@@ -187,4 +187,8 @@ a {
 
 .type svg {
     fill: currentColor;
+}
+
+.is-hidden{
+    display: none;
 }
