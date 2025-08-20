@@ -1,0 +1,31 @@
+.header__inner {
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__time{
+    font-size: 18px;
+}
+
+.calculator__body {
+  display: grid;
+  grid-template-columns: repeat(4, 88px);
+  grid-template-rows: repeat(5, 88px);
+  justify-content: center;
+  gap: 10px;
+}
+
+.calculator__count-info {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 121px;
+  margin-top: 170px;
+  font-size: 93px;
+  align-items: flex-end;
+   overflow: hidden;
+  white-space: nowrap; 
+}
+

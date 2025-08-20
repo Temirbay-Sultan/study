@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css" />
+
+    <title>Calculator</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-xl">
+            <div class="header__inner">
+                <time class="header__time" id="clock"></time>
+                <img src="./images/Right Area.png" alt="iphone icons header" class="right-img">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="calculator__inner">
+                <div class="calculator__count-info" id="display">0</div>
+                <div class="calculator__body">
+                    <button class="btn silver" id="clean">C</button>
+                    <button class="btn silver"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.937828 7.69751C0.937828 7.41431 1.03223 7.1783 1.22103 6.9895C1.41927 6.79126 1.66 6.69214 1.9432 6.69214H4.81771V3.80347C4.81771 3.52026 4.91211 3.28426 5.10091 3.09546C5.29916 2.89722 5.53516 2.7981 5.80892 2.7981C6.09212 2.7981 6.32813 2.89722 6.51693 3.09546C6.71517 3.28426 6.81429 3.52026 6.81429 3.80347V6.69214H9.70296C9.98617 6.69214 10.2222 6.79126 10.411 6.9895C10.6092 7.1783 10.7083 7.41431 10.7083 7.69751C10.7083 7.97127 10.6092 8.20728 10.411 8.40552C10.2222 8.59432 9.98617 8.68872 9.70296 8.68872H6.81429V11.5774C6.81429 11.8512 6.71517 12.0872 6.51693 12.2854C6.32813 12.4742 6.09212 12.5686 5.80892 12.5686C5.5446 12.5686 5.31332 12.4742 5.11507 12.2854C4.91683 12.0966 4.81771 11.8606 4.81771 11.5774V8.68872H1.9432C1.66 8.68872 1.41927 8.59432 1.22103 8.40552C1.03223 8.20728 0.937828 7.97127 0.937828 7.69751ZM15.3104 14.5369L7.15414 26.6155C6.97477 26.8798 6.80485 27.0639 6.64437 27.1677C6.48389 27.281 6.28565 27.3376 6.04964 27.3376C5.73812 27.3376 5.46908 27.2432 5.24252 27.0544C5.02539 26.8751 4.91683 26.6296 4.91683 26.3181C4.91683 26.1671 4.94043 26.0255 4.98763 25.8933C5.03483 25.7706 5.10563 25.6431 5.20004 25.511L13.4271 13.3899L21.555 1.32544C21.7533 1.0328 21.9326 0.839274 22.0931 0.744873C22.263 0.641032 22.4707 0.589111 22.7161 0.589111C23.0088 0.589111 23.259 0.688232 23.4666 0.886475C23.6838 1.07528 23.7923 1.31128 23.7923 1.59448C23.7923 1.73608 23.7687 1.86825 23.7215 1.99097C23.6838 2.11369 23.6177 2.24585 23.5233 2.38745L15.3104 14.5369ZM17.9583 21.2063C17.9583 20.9325 18.0527 20.7013 18.2415 20.5125C18.4398 20.3142 18.6758 20.2151 18.9495 20.2151H26.7235C26.9972 20.2151 27.2332 20.3142 27.4315 20.5125C27.6297 20.7013 27.7288 20.9325 27.7288 21.2063C27.7288 21.4895 27.6297 21.7302 27.4315 21.9285C27.2332 22.1173 26.9972 22.2117 26.7235 22.2117H18.9495C18.6758 22.2117 18.4398 22.1173 18.2415 21.9285C18.0527 21.7302 17.9583 21.4895 17.9583 21.2063Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                    <button class="btn silver">%</button>
+                    <button class="btn orange">÷</button>
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn orange">×</button>
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn orange">-</button>
+                    <button class="btn">3</button>
+                    <button class="btn">2</button>
+                    <button class="btn">1</button>
+                    <button class="btn orange">+</button>
+                    <button class="btn">ios</button>
+                    <button class="btn">0</button>
+                    <button class="btn">,</button>
+                    <button class="btn orange" id="result">=</button>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
