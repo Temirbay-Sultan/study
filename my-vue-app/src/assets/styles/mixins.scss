@@ -1,7 +1,7 @@
-@mixin container($padding: 80px){
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: $padding;
+@mixin container($padding: 80px) {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: $padding;
 }
 
 @mixin flex-center-between {
@@ -30,18 +30,12 @@
   position: absolute;
   bottom: $bottom;
   right: $right;
+  z-index: 1;
 }
 
-@mixin inside-image($bottom:0,$right:0){
-  position: absolute;
-  bottom: $bottom;
-  right:$right;
-}
-
-@mixin link-base($color: var(--color-blue-600),$gap:0){
+@mixin link-base($color: var(--color-blue-600), $gap: 0) {
   display: flex;
   gap: $gap;
   align-items: center;
   color: $color;
-} 
-
+}
