@@ -1,51 +1,57 @@
-<template>
-    <nav class="header__nav">
-        <ul class="header__menu">
-            <li v-for="(item, index) in menu" :key="index" class="header__menu-item">
-                <a class="header__menu-link" :href="item.href">
-                    {{ item.label }}
-                    <ArrowIcon v-if="item.hasIcon" :width="15" :height="8" color="#0F172A" />
-                </a>
-            </li>
-        </ul>
-    </nav>
-</template>
-
 <script setup>
+import ArrowIcon from './icons/ArrowIcon.vue'
 
-import ArrowIcon from "@/components/icons/ArrowIcon.vue"
 defineProps({
-    menu: {
-        type: Array,
-        default: () => [
-            { label: 'Products', href: '#', hasIcon: true },
-            { label: 'Solutions', href: '#', hasIcon: true },
-            { label: 'Services', href: '#', hasIcon: true },
-            { label: 'Help Center', href: '#', hasIcon: true },
-            { label: 'Pricing', href: '#', hasIcon: false },
-        ]
-    }
+  items: {
+    type: Array,
+    required: true,
+  },
+  withIcons: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 
-<style scoped lang="scss">
-.header__nav {
-    display: flex;
-    flex: 1;
-    justify-content: center;
+<template>
+  <nav class="header__nav">
+    <ul class="header__list">
+      <li v-for="(item, index) in items" :key="index" class="header__item">
+        <a :href="item.href" class="header__link">
+          {{ item.label }}
+          <ArrowIcon
+            v-if="withIcons && index !== items.length - 1"
+            class="header__icon"
+          />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</template>
+
+<style scoped>
+.header__icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 6px;
+  vertical-align: middle;
 }
 
-.header__menu {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+.header__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
-.header__menu-link {
-    color: var(--color-blue-gray);
-    font-size: 16px;
-    text-decoration: none;
+.header__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+.header__link:hover {
+  color: var(--color-primary);
 }
 </style>
