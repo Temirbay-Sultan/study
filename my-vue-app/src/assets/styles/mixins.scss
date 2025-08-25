@@ -1,0 +1,41 @@
+@mixin container($padding: 80px) {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: $padding;
+}
+
+@mixin flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin font-title($size, $weight: 400, $lineHeight: 1.5, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+
+  @if $color != null {
+    color: $color;
+  }
+}
+
+@mixin inside-image($bottom: 0, $right: 0) {
+  position: absolute;
+  bottom: $bottom;
+  right: $right;
+  z-index: 1;
+}
+
+@mixin link-base($color: var(--color-blue-600), $gap: 0) {
+  display: flex;
+  gap: $gap;
+  align-items: center;
+  color: $color;
+}
