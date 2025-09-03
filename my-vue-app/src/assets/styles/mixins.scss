@@ -4,6 +4,21 @@
   padding: $padding;
 }
 
+$breakpoints: (
+  'sm': '(max-width: 767px)',
+  'lg': '(max-width: 1440px)'
+);
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content; // сюда попадёт весь вложенный код
+    }
+  } @else {
+    @error "Не указано значение для `#{$breakpoint}`";
+  }
+}
+
 @mixin flex-center-between {
   display: flex;
   justify-content: space-between;

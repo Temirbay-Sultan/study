@@ -42,7 +42,6 @@ import ResponsiveText from "@components/ResponsiveText.vue"
         flex-direction: column;
         width: 46%;
         gap: 15px;
-
     }
 
     &__title {
@@ -55,11 +54,50 @@ import ResponsiveText from "@components/ResponsiveText.vue"
         font-weight: 200;
     }
 
-
     &__link {
         @include link-base(var(--color-blue-600), 16px);
 
     }
+}
 
+@include respond-to("sm") {
+  .tools {
+    @include container(48px 16px);
+
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &__img {
+      width: 360px;
+      padding-left: 40px;
+    }
+
+    &__image {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__article {
+      width: 100%;
+    }
+
+    &__link {
+      display: none;
+    }
+
+    &__description {
+      font-size: 16px;
+      color: var(--color-blue-gray-900);
+    }
+  }
 }
 </style>

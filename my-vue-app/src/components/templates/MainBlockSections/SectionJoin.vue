@@ -82,4 +82,34 @@ import UiButton from "../../UI/UiButton.vue"
         }
     }
 }
+
+@include respond-to("sm") {
+ .join {
+    @include container(0);
+
+    &__inner {
+      border-radius: 0;
+      gap: 24px;
+    }
+
+    &__image-container {
+      height: 434px;
+      border-radius: 0;
+    }
+
+    &__article {
+      max-width: 100%;
+      padding: 0 24px;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+  }
+}
+
 </style>

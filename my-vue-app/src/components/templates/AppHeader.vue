@@ -34,6 +34,11 @@ const navItems = [
   { label: 'Services', href: '/services' },
   { label: 'Help Center', href: '/help' },
   { label: 'Pricing', href: '/pricing' },
+
+
+
+
+  
 ]
 
 </script>
@@ -70,6 +75,35 @@ const navItems = [
 
   &__arrow-mobile {
     display: none;
+  }
+}
+
+@include respond-to("sm") {
+  .header {
+    .container-xl {
+      padding: 16px;
+      justify-content: center;
+      width: 100%;
+    }
+
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+
+
+    &__nav {
+      display: none;
+    }
+
+    &__desktop {
+      display: none;
+    }
+
+    &__arrow-mobile {
+      display: flex;
+    }
+
   }
 }
 </style>

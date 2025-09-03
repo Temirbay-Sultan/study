@@ -1,31 +1,31 @@
 <template>
-     <section class="workflow">
-            <div class="container">
-                <div class="workflow__inner">
-                    <div class="workflow__article">
-                        <h2 class="workflow__title">
-                            Improve workflow
-                        </h2>
-                        <ButtonGroup :buttons="['Research', 'Plan', 'Design']" @click="onClick" />
+    <section class="workflow">
+        <div class="container">
+            <div class="workflow__inner">
+                <div class="workflow__article">
+                    <h2 class="workflow__title">
+                        Improve workflow
+                    </h2>
+                    <ButtonGroup :buttons="['Research', 'Plan', 'Design']" @click="onClick" />
 
-                        <p class="workflow__description">Egestas fringilla aliquam leo, habitasse arcu varius lorem
-                            elit. Neque
-                            pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet.
-                            Purus malesuada
-                            placerat arcu at enim elit in accumsan.</p>
+                    <p class="workflow__description">Egestas fringilla aliquam leo, habitasse arcu varius lorem
+                        elit. Neque
+                        pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet.
+                        Purus malesuada
+                        placerat arcu at enim elit in accumsan.</p>
 
-                        <a href="#" class="workflow__link type">
-                            Check the tools
-                           <ArrowRight/>
-                        </a>
-                    </div>
-                    <div class="workflow__image-container">
-                        <img src="@img/workflow.png" alt="people watching a screen" class="workflow__image-inner" />
-                        <img src="@img/magic-workflow.png" alt="magic stars" class="workflow__image-magic">
-                    </div>
+                    <a href="#" class="workflow__link type">
+                        Check the tools
+                        <ArrowRight />
+                    </a>
+                </div>
+                <div class="workflow__image-container">
+                    <img src="@img/workflow.png" alt="people watching a screen" class="workflow__image-inner" />
+                    <img src="@img/magic-workflow.png" alt="magic stars" class="workflow__image-magic">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 </template>
 
 <script setup>
@@ -78,6 +78,30 @@ import ArrowRight from "@svg/ArrowRight.vue"
         top: 20%;
         right: -10%;
         z-index: 1;
+    }
+}
+
+@include respond-to("sm") {
+
+    .workflow {
+        @include container(48px 16px);
+
+        &__inner {
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &__image-magic {
+            display: none;
+        }
+
+        &__description {
+            font-size: 16px;
+        }
     }
 }
 </style>

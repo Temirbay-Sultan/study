@@ -70,4 +70,34 @@ import ArrowRight from "@svg/ArrowRight.vue"
         @include link-base(var(--color-light), 16px);
     }
 }
+
+@include respond-to("sm") {
+  .ease {
+    @include container(0);
+
+    &__inner {
+      border-radius: 0;
+      gap: 24px;
+    }
+
+    &__image-container {
+      height: 434px;
+      border-radius: 0;
+    }
+
+    &__article {
+      max-width: 100%;
+      padding: 0 24px;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+  }
+
+}
 </style>

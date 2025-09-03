@@ -77,4 +77,39 @@ import ArrowRight from "@svg/ArrowRight.vue"
     z-index: 1;
   }
 }
+
+@include respond-to("sm") {
+    .enjoy {
+    @include container(48px 16px);
+
+    &__inner {
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__description {
+      font-size: 16px;
+      color: var(--color-blue-gray-900);
+    }
+
+    &__image-container {
+      order: 2;
+    }
+
+    &__image-magic{
+      left: -18px;
+      top: 25px;
+    }
+
+    &__article {
+      order: 1;
+      width: 100%;
+    }
+  }
+}
 </style>

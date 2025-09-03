@@ -12,9 +12,7 @@
         </p>
       </div>
 
-      <FooterColumn
-        :items="footerItems"
-      />
+      <FooterColumn :items="footerItems" />
     </div>
   </footer>
 </template>
@@ -36,31 +34,51 @@ const footerItems = [
 
 <style scoped lang="scss">
 .footer {
+  @include container(10px 80px 92px);
 
-    @include container(10px 80px 92px);
+  &__inner {
+    @include flex-center-between;
+  }
+
+  &__brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 10px;
+  }
+
+  &__logo-image {
+    min-width: 80px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+  }
+}
+
+.footer {
+  @include respond-to("sm") {
+    @include container(24px 16px);
 
     &__inner {
-        @include flex-center-between;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
     }
 
     &__brand {
-        display: flex;
-        align-items: center;
-        gap: 8px;
+      flex-direction: column;
     }
 
-    &__logo-image {
-        min-width: 80px;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        svg {
-            height: 100%;
-            width: auto;
-            display: block;
-        }
+    &__column {
+      gap: 8px;
     }
+  }
 }
 </style>
