@@ -3,15 +3,15 @@
         <div class="ease__inner">
             <div class="ease__image-container">
                 <div class="ease__article">
-                    <h2 class="ease__title">Problems come and get solved with ease</h2>
-                    <p class="ease__description">Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
-                        Neque
-                        pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet.
-                        Purus malesuada
-                        placerat arcu at enim elit in accumsan.</p>
+                    <h2 class="ease__title">
+                      {{ t('ease-text.title') }}
+                    </h2>
+                    <p class="ease__description">
+                      {{ t('ease-text.description') }}
+                    </p>
 
                     <a href="#" class="ease__link type">
-                        Improve workflow
+                        {{ t('ease-text.link') }}
                         <ArrowRight/>
                     </a>
                 </div>
@@ -22,6 +22,8 @@
 
 <script setup>
 import ArrowRight from "@svg/ArrowRight.vue"
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
 </script>
 
 <style scoped lang="scss">

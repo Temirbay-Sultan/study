@@ -8,10 +8,8 @@
           </div>
         </a>
         <p class="footer__copyright base">
-          © 2023. All rights reserved.
-        </p>
+          {{ t('footer.copyright') }} </p>
       </div>
-
       <FooterColumn :items="footerItems" />
     </div>
   </footer>
@@ -20,15 +18,19 @@
 <script setup>
 import FooterColumn from '../FooterColumn.vue'
 import SiteLogo from '../icons/SiteLogo.vue'
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
 
-const footerItems = [
-  { label: 'Terms', href: '/terms' },
-  { label: 'Privacy', href: '/privacy' },
-  { label: 'Support', href: '/support' },
-  { label: 'About', href: '/about' },
-  { label: 'Resources', href: '/resources' },
-  { label: 'Contact', href: '/contact' },
-]
+const { t } = useI18n()
+
+const footerItems = computed(() => [
+  { label: t('footer.terms'), href: '/terms' },
+  { label: t('footer.privacy'), href: '/privacy' },
+  { label: t('footer.support'), href: '/support' },
+  { label: t('footer.about'), href: '/about' },
+  { label: t('footer.resources'), href: '/resources' },
+  { label: t('footer.contact'), href: '/contact' }
+])
 </script>
 
 

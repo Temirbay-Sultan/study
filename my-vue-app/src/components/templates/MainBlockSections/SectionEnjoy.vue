@@ -7,15 +7,14 @@
       </div>
       <div class="enjoy__article">
         <h2 class="enjoy__title">
-          Enjoy your time working
+          {{ t('enjoy-text.title') }}
         </h2>
         <p class="enjoy__description">
-          Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac
-          neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.
+          {{ t('enjoy-text.description') }}
         </p>
         <div class="enjoy__more-info">
           <a href="#" class="enjoy__link type">
-            See how it helped others
+            {{ t('enjoy-text.link') }}
             <ArrowRight />
           </a>
         </div>
@@ -28,6 +27,8 @@
 import enjoy from "@img/enjoy.png"
 import magicEnjoy from "@img/magic-enjoy.png"
 import ArrowRight from "@svg/ArrowRight.vue"
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
 </script>
 
 <style scoped lang="scss">

@@ -2,21 +2,19 @@
     <section class="project">
         <div class="project__inner">
             <div class="project__article">
-                <ResponsiveText tag="h2" class="project__title" desktopText="Team projects, done well"
-                    mobileText="Teach students worldwide" />
-
-                <ResponsiveText tag="p" class="project__description" desktopText="The only platform that gives your team all the tools needed to
-              work together on their awesome projects." mobileText="Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin
-              massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies." />
-
+                <ResponsiveText tag="h2" class="project__title" :desktopText="t('project-text.title-desktop')"
+                    :mobileText="t('project-text.title-mobile')" />
+                <ResponsiveText tag="p" class="project__description"
+                    :desktopText="t('project-text.description-desktop')"
+                    :mobileText="t('project-text.description-mobile')" />
                 <form class="project__form">
                     <div class="project__input-wrapper">
                         <FormIcon />
-                        <input class="project__form-input input" id="email" placeholder="Enter work email"
-                            type="email" />
+                        <input class="project__form-input input" id="email"
+                            :placeholder="t('project-text.email-placeholder')" type="email" />
                     </div>
                     <UiButton class="project__btn">
-                        Sign Up Free
+                        {{ t('header.btn-text') }}
                         <ArrowRight />
                     </UiButton>
                 </form>
@@ -46,6 +44,8 @@ import logo3 from "@/assets/images/project-logo/3.png"
 import logo4 from "@/assets/images/project-logo/4.png"
 import ArrowRight from '../../icons/ArrowRight.vue';
 import FormIcon from '../../icons/FormIcon.vue';
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
 
 const logos = [logo1, logo2, logo3, logo4]
 

@@ -1,0 +1,59 @@
+{
+  "header": {
+    "greet": "Кіру",
+    "btn-text": "Тегін тіркелу"
+  },
+  "nav": {
+    "products": "Өнімдер",
+    "solutions": "Шешімдер",
+    "services": "Қызметтер",
+    "help": "Көмек орталығы",
+    "pricing": "Баға"
+  },
+  "project-text": {
+    "title-desktop": "Топтық жобалар, жақсы орындалды",
+    "title-mobile": "Бүкіл әлем бойынша студенттерді оқытыңыз",
+    "description-desktop": "Сіздің командаңызға керемет жобаларында бірге жұмыс істеуге қажетті барлық құралдарды беретін жалғыз платформа.",
+    "description-mobile": "Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.",
+    "email-placeholder": "Электрондық поштаны енгізіңіз"
+  },
+  "enjoy-text": {
+    "title": "Жұмыс уақытыңыздан ләззат алыңыз",
+    "description": "Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut acneque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.",
+    "link": "Оның басқаларға қалай көмектескенін қараңыз"
+  },
+  "ease-text": {
+    "title": "Мәселелер туындайды және оңай шешіледі.",
+    "description": "Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.",
+    "link": "Жұмыс процесін жақсартыңыз"
+  },
+  "tools-text": {
+    "title-desktop": "Командаңызға қажетті барлық құралдарды алыңыз",
+    "title-mobile": "Жұмыс уақытыңыздан ләззат алыңыз",
+    "description-desktop": "Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.",
+    "description-mobile": "Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.",
+    "link": "Құралдарды тексеріңіз"
+  },
+  "join-text": {
+    "title": "Бүгін қауымдастыққа қосылыңыз",
+    "description": "Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec ettellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.",
+    "btn-text": "Тегін тіркелу"
+  },
+  "workflow-text": {
+    "title": "Жұмыс процесін жақсарту",
+    "description": "Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.",
+    "btn-text": "Құралдарды тексеріңіз",
+    "research": "Зерттеу",
+    "plan": "Жоспар",
+    "design": "Дизайн"
+  },
+   "footer": {
+    "terms": "Шарттар",
+    "privacy": "Құпиялылық",
+    "support": "Қолдау",
+    "about": "Біз туралы",
+    "resources": "Ресурстар",
+    "contact": "Байланыс",
+    "copyright": "© 2025. Барлық құқықтар қорғалған."
+  }
+}

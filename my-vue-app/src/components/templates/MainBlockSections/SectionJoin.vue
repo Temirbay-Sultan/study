@@ -4,17 +4,13 @@
             <div class="join__image-container">
                 <div class="join__article">
                     <h2 class="join__title">
-                        Join the community today
+                        {{ t('join-text.title') }}
                     </h2>
                     <p class="join__description">
-                        Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et
-                        tellus ac
-                        varius
-                        tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit
-                        in accumsan.
+                        {{ t('join-text.description') }}
                     </p>
                     <UiButton class="join__my-big-btn">
-                        Sign Up Free
+                        {{ t('join-text.btn-text') }}
                         <ArrowRight/>
                     </UiButton>
                 </div>
@@ -26,6 +22,8 @@
 <script setup>
 import ArrowRight from "@svg/ArrowRight.vue"
 import UiButton from "../../UI/UiButton.vue"
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
 </script>
 
 <style scoped lang="scss">

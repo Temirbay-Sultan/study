@@ -4,18 +4,16 @@
             <div class="workflow__inner">
                 <div class="workflow__article">
                     <h2 class="workflow__title">
-                        Improve workflow
+                        {{ t('workflow-text.title') }}
                     </h2>
-                    <ButtonGroup :buttons="['Research', 'Plan', 'Design']" @click="onClick" />
+                    <ButtonGroup :buttons="buttons" @click="onClick" />
 
-                    <p class="workflow__description">Egestas fringilla aliquam leo, habitasse arcu varius lorem
-                        elit. Neque
-                        pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet.
-                        Purus malesuada
-                        placerat arcu at enim elit in accumsan.</p>
+                    <p class="workflow__description">
+                        {{ t('workflow-text.description') }}
+                    </p>
 
                     <a href="#" class="workflow__link type">
-                        Check the tools
+                        {{ t('workflow-text.btn-text') }}
                         <ArrowRight />
                     </a>
                 </div>
@@ -30,6 +28,20 @@
 
 <script setup>
 import ArrowRight from "@svg/ArrowRight.vue"
+import ButtonGroup from "../../UI/ButtonGroup.vue";
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
+import { computed } from 'vue'
+
+const buttons = computed(() => [
+    t('workflow-text.research'),
+    t('workflow-text.plan'),
+    t('workflow-text.design')
+])
+
+const onClick = (button) => {
+    console.log('Clicked:', button)
+}
 </script>
 
 <style scoped lang="scss">

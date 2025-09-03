@@ -1,7 +1,10 @@
 <script setup>
 import ArrowIcon from './icons/ArrowIcon.vue'
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n({ useScope: 'global' });
 
-defineProps({
+
+const { items, withIcons } = defineProps({
   items: {
     type: Array,
     required: true,
@@ -16,9 +19,9 @@ defineProps({
 <template>
   <nav class="header__nav">
     <ul class="header__list">
-      <li v-for="(item, index) in items" :key="index" class="header__item">
+      <li v-for="(item, index) in items" :key="item.href" class="header__item">
         <a :href="item.href" class="header__link">
-          {{ item.label }}
+          {{  item.labelKey ? t(item.labelKey) : item.label}}
           <ArrowIcon
             v-if="withIcons && index !== items.length - 1"
             class="header__icon"

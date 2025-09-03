@@ -7,9 +7,14 @@
         </a>
         <HeaderNav :items="navItems" :with-icons="true" />
         <div class="header__desktop">
-          <a href="#" class="header__login">Log In</a>
+          <select v-model="locale" class="header__locale-select">
+            <option v-for="locale in availableLocales" :key="`locale-${locale}`" :value="locale">
+              {{ locale }}
+            </option>
+          </select>
+          <a href="#" class="header__login">{{ t("header.greet") }}</a>
           <UiButton class="header__signup-button">
-            Sign Up Free
+            {{ t('header.btn-text') }}
             <ArrowRight />
           </UiButton>
         </div>
@@ -27,18 +32,17 @@ import HeaderNav from '../HeaderNav.vue';
 import SiteLogo from '@svg/SiteLogo.vue';
 import ArrowRight from '../icons/ArrowRight.vue';
 import MenuIcon from '../icons/MenuIcon.vue';
+import { useI18n } from 'vue-i18n';
+const { t, locale, availableLocales } = useI18n({ useScope: 'global' });
+
+
 
 const navItems = [
-  { label: 'Products', href: '/products' },
-  { label: 'Solutions', href: '/solutions' },
-  { label: 'Services', href: '/services' },
-  { label: 'Help Center', href: '/help' },
-  { label: 'Pricing', href: '/pricing' },
-
-
-
-
-  
+  { labelKey: 'nav.products', href: '/products' },
+  { labelKey: 'nav.solutions', href: '/solutions' },
+  { labelKey: 'nav.services', href: '/services' },
+  { labelKey: 'nav.help', href: '/help' },
+  { labelKey: 'nav.pricing', href: '/pricing' }
 ]
 
 </script>
@@ -59,6 +63,14 @@ const navItems = [
     border-radius: var(--border-radius);
     color: var(--color-blue-600);
     padding: 10px;
+  }
+
+  &__locale-select {
+    padding: 6px 10px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-blue-gray-300);
+    background: white;
+    cursor: pointer;
   }
 
   &__login:hover {
