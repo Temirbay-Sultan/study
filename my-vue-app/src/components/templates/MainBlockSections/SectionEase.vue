@@ -1,0 +1,105 @@
+<template>
+    <section class="ease">
+        <div class="ease__inner">
+            <div class="ease__image-container">
+                <div class="ease__article">
+                    <h2 class="ease__title">
+                      {{ t('ease-text.title') }}
+                    </h2>
+                    <p class="ease__description">
+                      {{ t('ease-text.description') }}
+                    </p>
+
+                    <a href="#" class="ease__link type">
+                        {{ t('ease-text.link') }}
+                        <ArrowRight/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+<script setup>
+import ArrowRight from "@svg/ArrowRight.vue"
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
+</script>
+
+<style scoped lang="scss">
+.ease {
+    @include container;
+
+    &__inner {
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__image-container {
+        position: relative;
+        background: url('@img/ease.png') center center / cover no-repeat;
+        border-radius: 20px;
+        width: 100%;
+        height: 496px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        padding: 40px;
+        z-index: 1;
+        gap: 24px;
+    }
+
+    &__title {
+        @include font-title(56px, 900, 1.1, var(--color-light));
+    }
+
+    &__description {
+        font-size: 18px;
+        color: var(--color-light);
+        font-weight: 200;
+    }
+
+
+    &__link {
+        @include link-base(var(--color-light), 16px);
+    }
+}
+
+@include respond-to("sm") {
+  .ease {
+    @include container(0);
+
+    &__inner {
+      border-radius: 0;
+      gap: 24px;
+    }
+
+    &__image-container {
+      height: 434px;
+      border-radius: 0;
+    }
+
+    &__article {
+      max-width: 100%;
+      padding: 0 24px;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+  }
+
+}
+</style>

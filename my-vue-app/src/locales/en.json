@@ -1,0 +1,59 @@
+{
+  "header": {
+    "greet": "Log In",
+    "btn-text": "Sign Up Free"
+  },
+  "nav": {
+    "products": "Products",
+    "solutions": "Solutions",
+    "services": "Services",
+    "help": "Help Center",
+    "pricing": "Pricing"
+  },
+  "project-text": {
+    "title-desktop": "Team projects, done well",
+    "title-mobile": "Teach students worldwide",
+    "description-desktop": "The only platform that gives your team all the tools needed to work together on their awesome projects.",
+    "description-mobile": "Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.",
+    "email-placeholder": "Enter work email"
+  },
+  "enjoy-text": {
+    "title": "Enjoy your time working",
+    "description": "Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut acneque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.",
+    "link": "See how it helped others"
+  },
+  "ease-text": {
+    "title": "Problems come and get solved with ease",
+    "description": "Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.",
+    "link": "Improve workflow"
+  },
+  "tools-text": {
+    "title-desktop": "Get all the tools your team needs",
+    "title-mobile": "Enjoy your time working",
+    "description-desktop": "Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.",
+    "description-mobile": "Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.",
+    "link": "Check the tools"
+  },
+  "join-text": {
+    "title": "Join the community today",
+    "description": "Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec ettellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.",
+    "btn-text": "Sign Up Free"
+  },
+  "workflow-text": {
+    "title" : "Improve workflow",
+    "description": "Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.",
+    "btn-text": "Check the tools",
+    "research": "Research",
+    "plan": "Plan",
+    "design": "Design"
+  },
+   "footer": {
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "support": "Support",
+    "about": "About",
+    "resources": "Resources",
+    "contact": "Contact",
+    "copyright": "© 2025. All rights reserved."
+  }
+}

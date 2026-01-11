@@ -1,0 +1,60 @@
+{
+  "header": {
+    "greet": "Авторизация",
+        "btn-text": "Зарегистрироваться"
+
+  },
+  "nav": {
+    "products": "Продукты",
+    "solutions": "Решения",
+    "services": "Услуги",
+    "help": "Центр помощи",
+    "pricing": "Цены"
+  },
+  "project-text": {
+    "title-desktop": "Командные проекты, выполненные успешно",
+    "title-mobile": "Обучайте студентов по всему миру",
+    "description-desktop": "Единственная платформа, которая предоставляет вашей команде все инструменты, необходимые для совместной работы над их потрясающими проектами.",
+    "description-mobile": "Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies." ,
+    "email-placeholder" : "Адрес электронной почты"
+  },
+  "enjoy-text":{
+    "title" : "Наслаждайтесь работой",
+    "description" : "Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut acneque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.",
+    "link": "Посмотр!ите, как это помогло другим"
+  },
+  "ease-text": {
+    "title": "Проблемы возникают и легко решаются.",
+    "description" : "Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.",
+    "link" : "Улучшите рабочий процесс"
+  },
+  "tools-text" : {
+    "title-desktop" : "Получите все инструменты, необходимые вашей команде",
+    "title-mobile" : "Наслаждайтесь работой",
+    "description-desktop": "Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan." ,
+    "description-mobile": "Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.",
+    "link" : "Проверьте инструменты"
+  },
+  "join-text" : {
+    "title" :"Присоединяйтесь к сообществу сегодня",
+    "description" :"Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec ettellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.",
+    "btn-text" : "Зарегистрироваться"
+  },
+  "workflow-text": {
+    "title" : "Улучшите рабочий процесс",
+    "description": "Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.",
+    "btn-text": "Проверьте инструменты",
+    "research": "Исследование",
+    "plan": "План",
+    "design": "Дизайн"
+  },
+  "footer": {
+    "terms": "Условия",
+    "privacy": "Конфиденциальность",
+    "support": "Поддержка",
+    "about": "О нас",
+    "resources": "Ресурсы",
+    "contact": "Контакты",
+    "copyright": "© 2025. Все права защищены."
+  }
+}
